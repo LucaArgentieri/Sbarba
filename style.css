@@ -1,3 +1,4 @@
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -17,4 +18,119 @@ img {
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Barriecito', cursive;
+}
+/* Header */
+header {
+    font-family: 'Barriecito', cursive;
+}
+nav {
+    width: 100%;
+    background-color: #FFCDC8;
+    height: 40px;
+}
+a{
+    text-decoration: none;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+}
+li {
+    margin: 0 2vw;
+    font-size: 40px;
+}  
+.nav li a {
+    color: black;
+}
+.logo {
+    width: 100px;
+}
+.item-a {
+  grid-area: alloggiare;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: blue;
+}
+.item-b {
+  grid-area: barrasopra;
+  grid-column-start: 5;
+  grid-column-end: 18;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  background-color: red;
+}
+.item-c {
+  grid-area: studiareright;
+  grid-column-start: 20;
+  grid-column-end: 28;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  background-color: brown;
+}
+.item-d {
+  grid-area: mangiare;
+  grid-column-start: 10;
+  grid-column-end: 18;
+  grid-row-start: 3;
+  grid-row-end: 12;
+  background-color: green;
+}
+.item-e {
+  grid-area: svagarsileft;
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 9;
+  grid-row-end: 14;
+  background-color: orange;
+}
+.item-f {
+  grid-area: barrasotto;
+  grid-column-start: 10;
+  grid-column-end: 22;
+  grid-row-start: 14;
+  grid-row-end: 13;
+  background-color: purple;
+}
+.item-g {
+  grid-area: arte;
+  grid-column-start: 23;
+  grid-column-end: 26;
+  grid-row-start: 14;
+  grid-row-end: 12;
+  background-color: grey;
+}
+.item-h {
+  grid-area: alloggiare1;
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 3;
+  grid-row-end: 8;
+  background-color: blue;
+}
+.item-i {
+  grid-area: arte1;
+  grid-column-start: 20;
+  grid-column-end: 26;
+  grid-row-start: 12;
+  grid-row-end: 7;
+  background-color: grey;
+}
+.container {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+  /* grid-template-areas: "alloggiare alloggiare alloggiare . . barrasopra barrasopra barrasopra barrasopra barrasopra barrasopra barrasopra barrasopra barrasopra barrasopra barrasopra . . studiareright studiareright studiareright studiareright studiareright studiareright"
+                       "alloggiare alloggiare alloggiare . . . . . . . . . . . . . . . studiareright studiareright studiareright studiareright studiareright studiareright"
+                       "alloggiare1 alloggiare1 alloggiare1 alloggiare1 alloggiare1 alloggiare1 alloggiare1 . . mangiare mangiare mangiare mangiare mangiare mangiare mangiare . studiareright studiareright studiareright studiareright studiareright studiareright studiareright"
+                       "alloggiare1 alloggiare1 alloggiare1 alloggiare1 alloggiare1 alloggiare1 alloggiare1 . . mangiare mangiare mangiare mangiare mangiare mangiare mangiare . . . . . . . ."
+                       "alloggiare1 alloggiare1 alloggiare1 alloggiare1 alloggiare1 alloggiare1 alloggiare1 . . mangiare mangiare mangiare mangiare mangiare mangiare mangiare . arte arte arte arte arte arte arte"
+                       "alloggiare1 alloggiare1 alloggiare1 alloggiare1 alloggiare1 alloggiare1 alloggiare1 . . mangiare mangiare mangiare mangiare mangiare mangiare mangiare . arte arte arte arte arte arte arte";
+                       ". . . . . . . . mangiare mangiare mangiare mangiare mangiare mangiare mangiare . arte arte arte arte arte arte arte"
+                       "svagarsileft svagarsileft svagarsileft svagarsileft svagarsileft svagarsileft svagarsileft . mangiare mangiare mangiare mangiare mangiare mangiare mangiare . arte arte arte arte arte arte arte"
+                       "svagarsileft svagarsileft svagarsileft svagarsileft svagarsileft svagarsileft svagarsileft . . . . . . . . . . . . . . arte arte arte"
+                       "svagarsileft svagarsileft svagarsileft svagarsileft svagarsileft svagarsileft svagarsileft . . barrasotto barrasotto barrasotto barrasotto barrasotto barrasotto barrasotto barrasotto barrasotto barrasotto barrasotto . arte arte arte"
+*/
 }
