@@ -25,14 +25,15 @@ header {
 }
 nav {
     width: 100%;
-    background-color: #FFCDC8;
-    height: 40px;
+}
+header.sfondo{
+  height: 40px;
+  background-color: #FFCDC8;
 }
 a{
     text-decoration: none;
 }
 ul {
-    display: flex;
     list-style-type: none;
 }
 li {
@@ -45,6 +46,45 @@ li {
 .logo {
     width: 100px;
 }
+.vocimenu > a {
+  position: relative;
+}
+.vocimenu a:hover {
+  text-decoration: none;
+}
+.vocimenu > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-45deg, #FFCDC8, #E5DFF1, #B6D5F3, #A8E8C5, #FCE9BD);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.vocimenu > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/* Grid */
 .item-a {
   grid-area: alloggiare;
   grid-column-start: 1;
@@ -136,4 +176,98 @@ section.container-fluid {
                        "svagarsileft svagarsileft svagarsileft svagarsileft svagarsileft svagarsileft svagarsileft . . . . . . . . . . . . . . arte arte arte"
                        "svagarsileft svagarsileft svagarsileft svagarsileft svagarsileft svagarsileft svagarsileft . . barrasotto barrasotto barrasotto barrasotto barrasotto barrasotto barrasotto barrasotto barrasotto barrasotto barrasotto . arte arte arte"
 */
+}
+@media (max-width:900px){
+  .vocimenu {
+    visibility: hidden;
+  }
+}
+@media (min-width:900px){
+  .menu-collapsed {
+    visibility: hidden;
+    display: none;
+    
+  }
+}
+
+/* Menu hamburger  */
+.b-a, .bar, .bar:before, .bar:after {
+  transition: all .25s;
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 3px;
+  width: 30px;
+  background-color:black;
+}
+
+.menu-collapsed {
+  transition: all .25s;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  height: 20px;
+  width: 36px;
+  z-index: 1;
+  cursor: pointer;
+}
+.menu-collapsed ul {
+  transition: all 0s;
+  position: fixed;
+  left: -9000px;
+}
+
+.bar:before {
+  top: -8px;
+}
+.bar:after {
+  top: 8px;
+}
+
+.b-a-expanded, .menu-expanded .bar:before, .menu-expanded .bar:after {
+  transition: all .25s;
+  top: -0px;
+  color: white;
+}
+
+.menu-expanded {
+  transition: all .25s;
+  text-align: center;
+  padding-top: 50px;
+  line-height: 150px;
+  height: 100%;
+  width: 100%;
+  border-radius: 0px;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.menu-expanded ul {
+  transition: all 0s;
+  position: relative;
+  left: 0;
+  z-index: 2;
+  padding-bottom: 50px;
+}
+.menu-expanded a {
+  transition: all .15s;
+  text-decoration: none;
+  font-size: 50px;
+  color: #fff;
+}
+.menu-expanded a:hover {
+  color: red;
+  text-decoration: none;
+}
+.menu-expanded .bar {
+  background-color: transparent;
+  transition: all .25s;
+}
+.menu-expanded .bar:before {
+  transform: rotate(45deg);
+  background-color:white;
+}
+.menu-expanded .bar:after {
+  transform: rotate(-45deg);
+  background-color:white;
 }
