@@ -51,7 +51,7 @@ li {
   grid-column-end: 6;
   grid-row-start: 1;
   grid-row-end: 3;
-  background-color: #B6D5F3;
+  background-color: #E5DFF1;
 }
 .item-b {
   grid-area: barrasopra;
@@ -83,7 +83,7 @@ li {
   grid-column-end: 11;
   grid-row-start: 10;
   grid-row-end: 15;
-  background-color: orange;
+  background-color: #B6D5F3;
 }
 .item-f {
   grid-area: barrasotto;
@@ -91,7 +91,7 @@ li {
   grid-column-end: 30;
   grid-row-start: 14;
   grid-row-end: 14;
-  background-color: purple;
+  background-color: #FCE9BD;
 }
 .item-g {
   grid-area: arte;
@@ -99,7 +99,7 @@ li {
   grid-column-end: 35;
   grid-row-start: 13;
   grid-row-end: 15;
-  background-color: grey;
+  background-color: #E5DFF1;
 }
 .item-h {
   grid-area: alloggiare1;
@@ -107,7 +107,7 @@ li {
   grid-column-end: 11;
   grid-row-start: 3;
   grid-row-end: 9;
-  background-color: #B6D5F3;
+  background-color: #E5DFF1;
 }
 .item-i {
   grid-area: arte1;
@@ -115,11 +115,13 @@ li {
   grid-column-end: 35;
   grid-row-start: 7;
   grid-row-end: 13;
-  background-color: grey;
+  background-color: #E5DFF1;
 }
 /* 35 colonne */
 section.container-fluid {
   margin-top: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px ;
