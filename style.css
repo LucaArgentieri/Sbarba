@@ -128,14 +128,14 @@ li {
 .item-f {
   grid-area: barrasotto;
   grid-column-start: 12;
-  grid-column-end: 30;
+  grid-column-end: 29;
   grid-row-start: 14;
   grid-row-end: 14;
   background-color: #FCE9BD;
 }
 .item-g {
   grid-area: arte;
-  grid-column-start: 31;
+  grid-column-start: 30;
   grid-column-end: 35;
   grid-row-start: 13;
   grid-row-end: 15;
@@ -157,14 +157,14 @@ li {
   grid-row-end: 13;
   background-color: #E5DFF1;
 }
-/* 35 colonne */
+/* 34 colonne */
 section.container-fluid {
   margin-top: 100px;
   padding-left: 40px;
   padding-right: 40px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px ;
+  grid-template-columns: repeat(34, 1fr);
+  grid-template-rows: repeat(14, 5vh);
   /* grid-template-areas: "alloggiare alloggiare alloggiare . . barrasopra barrasopra barrasopra barrasopra barrasopra barrasopra barrasopra barrasopra barrasopra barrasopra barrasopra . . studiareright studiareright studiareright studiareright studiareright studiareright"
                        "alloggiare alloggiare alloggiare . . . . . . . . . . . . . . . studiareright studiareright studiareright studiareright studiareright studiareright"
                        "alloggiare1 alloggiare1 alloggiare1 alloggiare1 alloggiare1 alloggiare1 alloggiare1 . . mangiare mangiare mangiare mangiare mangiare mangiare mangiare . studiareright studiareright studiareright studiareright studiareright studiareright studiareright"
