@@ -30,7 +30,9 @@ nav {
 }
 header.sfondo{
   height: 40px;
-  background-color: #F45B69;
+	background: linear-gradient(90deg, #F45B69, #52489C, #4062BB, #84DCC6, #E2EB98);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 }
 a{
     text-decoration: none;
@@ -46,7 +48,15 @@ li {
     color: black;
 }
 .logo {
-    width: 100px;
+  width: 100px;
+  vertical-align: top;
+}
+.navbar-brand.logotxt {
+  font-size: 50px;
+  color: black;
+}
+.navbar-brand.logotxt:hover {
+  opacity: 0.8;
 }
 .vocimenu > a {
   position: relative;
@@ -184,12 +194,20 @@ li {
   grid-column-start: 1;
   grid-column-end: 6;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 4;
+  background-color: #52489C;
+}
+.item-h {
+  grid-area: alloggiare1;
+  grid-column-start: 1;
+  grid-column-end: 12;
+  grid-row-start: 2;
+  grid-row-end: 7;
   background-color: #52489C;
 }
 .item-b {
   grid-area: barrasopra;
-  grid-column-start: 7;
+  grid-column-start: 6;
   grid-column-end: 24;
   grid-row-start: 1;
   grid-row-end: 1;
@@ -197,7 +215,7 @@ li {
 }
 .item-c {
   grid-area: studiareright;
-  grid-column-start: 25;
+  grid-column-start: 24;
   grid-column-end: 35;
   grid-row-start: 1;
   grid-row-end: 6;
@@ -207,48 +225,40 @@ li {
   grid-area: mangiare;
   grid-column-start: 12;
   grid-column-end: 24;
-  grid-row-start: 3;
-  grid-row-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 11;
   background-color: #84DCC6;
 }
 .item-e {
   grid-area: svagarsileft;
   grid-column-start: 1;
-  grid-column-end: 11;
-  grid-row-start: 10;
-  grid-row-end: 15;
+  grid-column-end: 12;
+  grid-row-start: 7;
+  grid-row-end: 12;
   background-color: #4062BB;
 }
 .item-f {
   grid-area: barrasotto;
   grid-column-start: 12;
-  grid-column-end: 29;
-  grid-row-start: 14;
-  grid-row-end: 14;
+  grid-column-end: 30;
+  grid-row-start: 11;
+  grid-row-end: 11;
   background-color: #F45B69;
 }
 .item-g {
   grid-area: arte;
   grid-column-start: 30;
   grid-column-end: 35;
-  grid-row-start: 13;
-  grid-row-end: 15;
-  background-color: #52489C;
-}
-.item-h {
-  grid-area: alloggiare1;
-  grid-column-start: 1;
-  grid-column-end: 11;
-  grid-row-start: 3;
-  grid-row-end: 9;
+  grid-row-start: 9;
+  grid-row-end: 12;
   background-color: #52489C;
 }
 .item-i {
   grid-area: arte1;
-  grid-column-start: 25;
+  grid-column-start: 24;
   grid-column-end: 35;
-  grid-row-start: 7;
-  grid-row-end: 13;
+  grid-row-start: 6;
+  grid-row-end: 11;
   background-color: #52489C;
 }
 /* 34 colonne */
@@ -256,9 +266,10 @@ section.container-fluid {
   margin-top: 100px;
   padding-left: 40px;
   padding-right: 40px;
+  grid-gap: 15px;
   display: grid;
   grid-template-columns: repeat(34, 1fr);
-  grid-template-rows: repeat(14, 5vh);
+  grid-template-rows: repeat(11, 5vh);
   /* Qui sotto giace la frustrazione di Luca */
   /* grid-template-areas: "alloggiare alloggiare alloggiare . . barrasopra barrasopra barrasopra barrasopra barrasopra barrasopra barrasopra barrasopra barrasopra barrasopra barrasopra . . studiareright studiareright studiareright studiareright studiareright studiareright"
                        "alloggiare alloggiare alloggiare . . . . . . . . . . . . . . . studiareright studiareright studiareright studiareright studiareright studiareright"
