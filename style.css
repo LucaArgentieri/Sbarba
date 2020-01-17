@@ -1,7 +1,10 @@
 /* Reset CSS 
 primi colori usati :  #FFCDC8, #E5DFF1, #B6D5F3, #A8E8C5, #FCE9BD
 Palette in uso ora: https://coolors.co/f1e3f3-84dcc6-e2eb98-f45b69-4062bb
-https://coolors.co/ebbab9-84dcc6-e2eb98-f45b69-4062bb*/
+https://coolors.co/ebbab9-84dcc6-e2eb98-f45b69-4062bb 
+8EA4D2
+https://coolors.co/ffc09f-84dcc6-e2eb98-f45b69-4062bb
+*/
 * {
     margin: 0;
     padding: 0;
@@ -216,7 +219,7 @@ li {
   grid-column-end: 6;
   grid-row-start: 1;
   grid-row-end: 4;
-  background-color: #EBBAB9;
+  background-color: #FFC09F;
 }
 
 .item-h {
@@ -225,7 +228,7 @@ li {
   grid-column-end: 12;
   grid-row-start: 2;
   grid-row-end: 7;
-  background-color: #EBBAB9;
+  background-color: #FFC09F;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -252,7 +255,7 @@ li {
   grid-column-end: 35;
   grid-row-start: 1;
   grid-row-end: 6;
-  background-color: #4062BB;
+  background-color: #8EA4D2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -304,7 +307,7 @@ li {
   grid-column-end: 35;
   grid-row-start: 9;
   grid-row-end: 12;
-  background-color: #EBBAB9;
+  background-color: #D5573B;
   
 }
 .item-i {
@@ -313,7 +316,7 @@ li {
   grid-column-end: 35;
   grid-row-start: 6;
   grid-row-end: 11;
-  background-color: #EBBAB9;
+  background-color: #D5573B;
   display: flex;
   justify-content: center;
   align-items: center;
