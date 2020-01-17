@@ -163,6 +163,16 @@ li {
     margin-top: -120px;
   }
 }
+@media (max-width:320px){
+  .menu-items {
+    margin-top: -180px;
+    font-size: 30px;
+  }
+  section.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
 .menu-items a {
   color: white;
   font-family: 'Barriecito', cursive;
@@ -207,6 +217,7 @@ li {
   grid-row-end: 4;
   background-color: #52489C;
 }
+
 .item-h {
   grid-area: alloggiare1;
   grid-column-start: 1;
@@ -214,6 +225,12 @@ li {
   grid-row-start: 2;
   grid-row-end: 7;
   background-color: #52489C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-family: 'Barriecito', cursive;
+
 }
 .item-b {
   grid-area: barrasopra;
@@ -222,6 +239,11 @@ li {
   grid-row-start: 1;
   grid-row-end: 1;
   background-color: #E2EB98;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  font-family: 'Barriecito', cursive;
 }
 .item-c {
   grid-area: studiareright;
@@ -230,6 +252,11 @@ li {
   grid-row-start: 1;
   grid-row-end: 6;
   background-color: #4062BB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-family: 'Barriecito', cursive;
 }
 .item-d {
   grid-area: mangiare;
@@ -238,6 +265,11 @@ li {
   grid-row-start: 2;
   grid-row-end: 11;
   background-color: #84DCC6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-family: 'Barriecito', cursive;
 }
 .item-e {
   grid-area: svagarsileft;
@@ -246,6 +278,11 @@ li {
   grid-row-start: 7;
   grid-row-end: 12;
   background-color: #4062BB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-family: 'Barriecito', cursive;
 }
 .item-f {
   grid-area: barrasotto;
@@ -254,6 +291,11 @@ li {
   grid-row-start: 11;
   grid-row-end: 11;
   background-color: #F45B69;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  font-family: 'Barriecito', cursive;
 }
 .item-g {
   grid-area: arte;
@@ -262,6 +304,7 @@ li {
   grid-row-start: 9;
   grid-row-end: 12;
   background-color: #52489C;
+  
 }
 .item-i {
   grid-area: arte1;
@@ -270,8 +313,22 @@ li {
   grid-row-start: 6;
   grid-row-end: 11;
   background-color: #52489C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-family: 'Barriecito', cursive;
 }
 /* 34 colonne */
+.container-fluid a {
+  color: black;
+}
+section.container-fluid a:hover {
+  color: black;
+  opacity: 0.7;
+  transform: scale(1.2);
+  text-decoration: none;
+}
 section.container-fluid {
   margin-top: 100px;
   grid-column-gap: 10px;
