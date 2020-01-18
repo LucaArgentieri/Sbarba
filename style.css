@@ -60,6 +60,12 @@ li {
   width: 100px;
   vertical-align: top;
 }
+@media (max-width:900px){
+  .logo {
+    width: 50px;
+    vertical-align: super;
+  }
+}
 .navbar-brand.logotxt {
   font-size: 50px;
   color: black;
@@ -106,7 +112,7 @@ li {
   transform: scaleX(1);
 }
 /* voci menu in mobile */
-@media (max-width:900px){
+@media (max-width:899px){
   .vocimenu {
     visibility: hidden;
   }
@@ -131,6 +137,23 @@ li {
   top: 50px;
   transform: translate3d(50%, -50%, 0);
   transform-origin: center center;
+}
+@media (max-width:900px){
+  .menu-bg {
+    z-index: 1;
+  }
+  .menu-bg.fs {
+    z-index: 1;
+  }
+  .menu-burger {
+    z-index: 1;
+  }
+  .menu-burger.fs {
+    z-index: 1;
+  }
+  .menu-items{
+    z-index: 1;
+  }
 }
 .menu-bg.fs {
   transform: translate3d(50%, -50%, 0);
@@ -162,7 +185,7 @@ li {
   transform: translateY(-200%);
   pointer-events: none;
 }
-@media (max-width:900px){
+@media (max-width:899px){
   .menu-items {
     margin-top: -120px;
   }
@@ -221,7 +244,6 @@ li {
   grid-row-end: 4;
   background-color: #FFC09F;
 }
-
 .item-h {
   grid-area: alloggiare1;
   grid-column-start: 1;
@@ -234,7 +256,6 @@ li {
   align-items: center;
   font-size: 40px;
   font-family: 'Barriecito', cursive;
-
 }
 .item-b {
   grid-area: barrasopra;
@@ -308,7 +329,6 @@ li {
   grid-row-start: 9;
   grid-row-end: 12;
   background-color: #D5573B;
-  
 }
 .item-i {
   grid-area: arte1;
@@ -354,8 +374,117 @@ section.container-fluid {
 */
 }
 @media (max-width:900px){
-  .logo {
-    width: 50px;
-    vertical-align: super;
+  .item-a {
+    grid-area: alloggiare;
+    grid-column-start: 1;
+    grid-column-end: 18;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: #FFC09F;
+  }
+  
+  .item-h {
+    grid-area: alloggiare1;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    background-color: #FFC09F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Barriecito', cursive;
+  
+  }
+  .item-b {
+    grid-area: barrasopra;
+    grid-column-start: 6;
+    grid-column-end: 24;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: #E2EB98;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Barriecito', cursive;
+    visibility: hidden;
+  }
+  .item-c {
+    grid-area: studiareright;
+    grid-column-start: 18;
+    grid-column-end: 35;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    background-color: #8EA4D2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Barriecito', cursive;
+  }
+  .item-d {
+    grid-area: mangiare;
+    grid-column-start: 12;
+    grid-column-end: 24;
+    grid-row-start: 2;
+    grid-row-end: 11;
+    background-color: #84DCC6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Barriecito', cursive;
+    z-index: 0;
+  }
+  .item-e {
+    grid-area: svagarsileft;
+    grid-column-start: 1;
+    grid-column-end: 18;
+    grid-row-start: 7;
+    grid-row-end: 12;
+    background-color: #4062BB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Barriecito', cursive;
+  }
+  .item-f {
+    grid-area: barrasotto;
+    grid-column-start: 12;
+    grid-column-end: 30;
+    grid-row-start: 11;
+    grid-row-end: 11;
+    background-color: #F45B69;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Barriecito', cursive;
+    visibility: hidden;
+  }
+  .item-g {
+    grid-area: arte;
+    grid-column-start: 18;
+    grid-column-end: 35;
+    grid-row-start: 9;
+    grid-row-end: 12;
+    background-color: #D5573B;
+    
+  }
+  .item-i {
+    grid-area: arte1;
+    grid-column-start: 18;
+    grid-column-end: 35;
+    grid-row-start: 6;
+    grid-row-end: 11;
+    background-color: #D5573B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Barriecito', cursive;
   }
 }
