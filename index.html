@@ -46,23 +46,28 @@
         <div class="item-i">Lettura</div>
     </section>
     <div class="bannerricercasfondo">
-      <h2 class="titolobarraricerca">Ste’ vòret cus’è?</h2>
-      <!-- <p class="">Cos'è che vuoi? In Milanese</p> -->
-      <div class="container h-50">
-        <div class="d-flex justify-content-center h-100">
-          <div class="searchbar">
-            <input class="search_input" type="text" name="" placeholder="Cosa posso cercare per te?">
-            <a href="tags.html" class="search_icon"><img src="images/loupe.svg" alt=""></a>
-          </div>
+        <h2 class="titolobarraricerca d-flex justify-content-center">Ste’ vòret cus’è?</h2>
+        <p class="parbarraricerca d-flex justify-content-center">Cosa stai cercando? In Milanese.</p>
+        <div class="d-flex justify-content-center">
+            <div id="search">
+              <img src="images/loupe.svg" class="searchicon" alt="">
+              <form>
+                <input type="text" id="search-input" class="search-input" name="search" 
+                autocomplete="off" placeholder="Cosa posso cercare per te?">
+              </form>
+            </div>
         </div>
-      </div>
     </div>
+    <main class="sfondomain"> 
+
+    </main> 
 
 
 
 
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="scripts/script.js"></script>
+<script src="scripts/search.js"></script>
 
 
 </body>
