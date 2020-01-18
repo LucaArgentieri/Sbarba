@@ -557,3 +557,35 @@ section.container-fluid {
 .sfondomain {
   height: 100vh;
 }
+@media (max-width:630px){
+  #search.active {
+    width: 400px;
+    transition: width 0.1s linear;
+  }
+  #search-input.active {
+    width: 300px;
+    margin-left: 30px;
+    visibility: visible;
+    text-align: left;
+  }
+  #search-input {
+    font-size: 25px;
+    line-height: 200px;
+  }
+}
+@media (max-width:416px){
+  #search.active {
+    width: 300px;
+    transition: width 0.1s linear;
+  }
+  #search-input.active {
+    width: 200px;
+    margin-left: 10px;
+    visibility: visible;
+    text-align: left;
+  }
+  #search-input {
+    font-size: 17px;
+    line-height: 200px;
+  }
+}
