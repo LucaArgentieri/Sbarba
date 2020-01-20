@@ -292,7 +292,7 @@ h2.navbar-brand.logotxt{
   grid-column-end: 24;
   grid-row-start: 2;
   grid-row-end: 11;
-  background-color: #84DCC6;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -501,11 +501,11 @@ section.container-fluid {
   }
 }
 /* Animazioni/Hover griglia 
-Link: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_card*/
+Link: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_card */
 .flip-card {
   background-color: transparent;
   height: 509px;
-  width: 569px;
+  width: 700px;
   perspective: 2000px;
 }
 
@@ -641,3 +641,73 @@ Link: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_card*/
     line-height: 200px;
   }
 }
+
+
+
+
+
+
+/* Footer */
+.sfondofooter {
+  height: auto;
+  background-color: #D5573B;
+}
+.sfondofooter hr {
+  background-color: black;
+  width: 100%;
+  margin-top: 40px;
+}
+.sfondofooter p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+/* form  https://codepen.io/ZachSaucier/pen/AIJpe*/
+form.formfooter { 
+  max-width:420px; 
+  margin:50px auto; 
+  padding-top: 40px;
+}
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid black;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid white; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
