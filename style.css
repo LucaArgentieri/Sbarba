@@ -52,12 +52,13 @@ ul {
 li {
     margin: 0 2vw;
     font-size: 40px;
+    margin-top: -20px;
 }
 .nav li a {
     color: black;
 }
 .logo {
-  width: 140px;
+  width: 150px;
   vertical-align: top;
 }
 h2.navbar-brand.logotxt{
@@ -498,6 +499,46 @@ section.container-fluid {
   .item-a p {
     display: none;
   }
+}
+/* Animazioni/Hover griglia 
+Link: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_card*/
+.flip-card {
+  background-color: transparent;
+  height: 509px;
+  width: 569px;
+  perspective: 2000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateX(180deg);
 }
 /* Barra ricerca */
 .bannerricercasfondo {
