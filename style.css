@@ -60,18 +60,22 @@ li {
   width: 140px;
   vertical-align: top;
 }
-@media (max-width:900px){
-  .logo {
-    width: 50px;
-    vertical-align: super;
-  }
-}
-.navbar-brand.logotxt {
+h2.navbar-brand.logotxt{
   font-size: 50px;
   color: black;
 }
 .navbar-brand.logotxt:hover {
   opacity: 0.8;
+}
+@media (max-width:900px){
+  .logo {
+    width: 150px;
+    margin-top: 30px;
+  }
+  h2.navbar-brand.logotxt {
+    font-size: 40px;
+    color: black;
+  }
 }
 .vocimenu > a {
   position: relative;
@@ -185,12 +189,12 @@ li {
 }
 @media (max-width:899px){
   .menu-items {
-    margin-top: -120px;
+    margin-top: -220px;
   }
 }
 @media (max-width:320px){
   .menu-items {
-    margin-top: -180px;
+    margin-top: -250px;
     font-size: 30px;
   }
   section.container-fluid {
@@ -352,7 +356,7 @@ section.container-fluid a:hover {
   text-decoration: none;
 }
 section.container-fluid {
-  margin-top: 100px;
+  margin-top: 150px;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   display: grid;
@@ -393,6 +397,9 @@ section.container-fluid {
     grid-row-start: 2;
     grid-row-end: 7;
     background-color: #FFC09F;
+  }
+  .item-h p {
+    display: none;
   }
   .item-b {
     grid-area: barrasopra;
