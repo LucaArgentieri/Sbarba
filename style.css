@@ -52,12 +52,12 @@ ul {
 li {
     margin: 0 2vw;
     font-size: 40px;
-}  
+}
 .nav li a {
     color: black;
 }
 .logo {
-  width: 100px;
+  width: 140px;
   vertical-align: top;
 }
 @media (max-width:900px){
