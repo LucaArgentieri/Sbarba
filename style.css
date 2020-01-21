@@ -16,7 +16,6 @@ html {
   height: 100%;
 }
 body {
-    background-color: whitesmoke;
     color: black;
     overflow-x: hidden;
     text-decoration: none;
@@ -285,6 +284,11 @@ h2.navbar-brand.logotxt{
   align-items: center;
   font-size: 40px;
   font-family: 'Barriecito', cursive;
+  background-image: url(images/ga.jpg);
+}
+.item-c:hover {
+  transition: 0.7s;
+  border: 50px #8EA4D2 solid;
 }
 .item-d {
   grid-area: mangiare;
@@ -299,6 +303,12 @@ h2.navbar-brand.logotxt{
   font-size: 40px;
   font-family: 'Barriecito', cursive;
 }
+.item-d:hover {
+background-image: url(images/Kiosko.jpg);
+transition: 0.7s;
+border: 50px #84DCC6 solid;
+}
+
 .item-e {
   grid-area: svagarsileft;
   grid-column-start: 1;
@@ -311,6 +321,11 @@ h2.navbar-brand.logotxt{
   align-items: center;
   font-size: 40px;
   font-family: 'Barriecito', cursive;
+  background-image: url(images/faf.jpg);
+}
+.item-e:hover {
+  transition: 0.7s;
+  border: 50px #4062BB solid;
 }
 .item-f {
   grid-area: barrasotto;
@@ -609,32 +624,121 @@ section.container-fluid {
 
 /* Footer */
 .sfondofooter {
-  height: 200px;
+  height: auto;
   margin-top: -50px;
   background-color: #D5573B;
 }
-.sfondofooter hr {
-  background-color: black;
-  width: 100%;
-  margin-top: 40px;
+.titolosocial {
+  text-align: center;
+  padding-top: 20px;
 }
 .sfondofooter p{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
+  margin-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.sfondofooter hr {
+  height: 3px;
+  background-image: linear-gradient(-45deg,#EBBAB9, #F45B69, #52489C, #4062BB, #84DCC6, #E2EB98);
+	animation: gradient 15s ease infinite;
+
+}
+.contenitoresocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.fb {
+  height: 50px;
+  margin-right: 50px;
+  background-color: #84DCC6;
+  padding: 6px 6px 6px 6px;
+  width: 50px;
+}
+.fb img {
+  height: 40px;
+  width: 50px;
+}
+.fb:hover {
+  opacity: 0.5;
+}
+.insta {
+  height: 50px;
+  margin-right: 50px;
+  background-color: #8EA4D2;
+  padding: 6px 6px 6px 6px;
+  width: 50px;
+}
+.insta:hover {
+  opacity: 0.5;
+}
+.twitter {
+  height: 50px;
+  background-color: #FFC09F;
+  padding: 6px 6px 6px 6px;
+  width: 50px;
+}
+.twitter:hover {
+  opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pagina contacts */
+main {
+  height: 100vh;
+}
+main h2 {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 50px;
+  
 }
 /* form  https://codepen.io/ZachSaucier/pen/AIJpe*/
+.formfooter h2 {
+  font-size: 50px;
+}
 form.formfooter { 
   max-width:420px; 
   margin:50px auto; 
   padding-top: 40px;
   padding-bottom: 40px;
 }
-
 .feedback-input {
-  color:white;
-  font-family: Helvetica, Arial, sans-serif;
+  color:black;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   font-weight:500;
   font-size: 18px;
   border-radius: 5px;
@@ -648,15 +752,15 @@ form.formfooter {
   box-sizing: border-box;
   outline:0;
 }
-
-.feedback-input:focus { border:2px solid white; }
-
+.feedback-input:focus { 
+  border:2px solid #F45B69;
+}
 textarea {
   height: 150px;
   line-height: 150%;
   resize:vertical;
+  opacity: 0.8;
 }
-
 [type="submit"] {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 100%;
@@ -670,6 +774,7 @@ textarea {
   padding-bottom:10px;
   transition: all 0.3s;
   margin-top:-4px;
-  font-weight:700;
 }
-[type="submit"]:hover { background:#CC4949; }
+[type="submit"]:hover { 
+  background:#CC4949
+}
