@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Barriecito&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <title>Sbarbà - Sopravvivere a Milano</title>
-    </head>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Barriecito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" href="images/favicon.png" type="image/png"/>
+    <title>Sbarbà - Sopravvivere a Milano</title>
+</head>
 <body>
     <header class="sfondo"> 
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
               <div class="navbar-header">
-                <a class="navbar-brand logo" href=""><img src="images/Tavola-disegno-1@2x.png" alt=""></a>
-                <a class="navbar-brand logotxt" href="index.html">Sbarbà</a>
+                <a class="navbar-brand logo" href=""><img src="images/logow.png" alt="Ué sbarbà benvenuto!"><h2 class="navbar-brand logotxt">Sbarbà!</h2></a>
               </div>
               <ul class="nav navbar-nav navbar-right flex-row">
                 <li class="vocimenu"><a href="blog.html">Il Blog</a></li>
@@ -29,10 +30,24 @@
           <div class="menu-bg"></div>
           <div class="menu-burger">☰</div>
           <div class="menu-items">
-            <div><a href="">Il Blog</a></div>
-            <div><a href="">Categorie</a></div>
-            <div><a href="">Contatti</a></div>
+            <div><a href="blog.html">Il Blog</a></div>
+            <div><a href="">Categorie & Tags</a></div>
+            <div><a href="contacts.html">Contatti</a></div>
           </div>
     </header>
+    <form class="formfooter">
+      <h2>Hey sksksks</h2> 
+      <input name="name" type="text" class="feedback-input" placeholder="Name" autocomplete="off"/>   
+      <input name="email" type="text" class="feedback-input" placeholder="Email" autocomplete="off"/>
+      <textarea name="text" class="feedback-input" placeholder="Comment" autocapitalize="off"></textarea>
+      <input type="submit" value="SUBMIT"/>
+    </form>
+    <footer class="sfondofooter">
+      <hr>
+      <p> Questo sito è stato creato a scopo didattico, dagli allievi della Scuola Mohole di Milano. I diritti dei marchi e immagini citati appartengono ai legittimi proprietari. Le situazioni citate sono immaginarie e create per produrre contenuti dimostrativi fittizi.
+      </p>
+    </footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="scripts/script.js"></script>
+<script src="scripts/search.js"></script>
 </body>
 </html>
