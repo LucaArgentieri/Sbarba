@@ -56,13 +56,10 @@ li {
 .nav li a {
     color: black;
 }
-.logo {
-  width: 150px;
-  vertical-align: top;
-}
 h2.navbar-brand.logotxt{
-  font-size: 50px;
+  font-size: 70px;
   color: black;
+  padding-bottom: 20px;
 }
 .navbar-brand.logotxt:hover {
   opacity: 0.8;
@@ -733,12 +730,20 @@ main h2 {
     padding-top: 150px;
   }
 }
+.maincontatti {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.maincontatti img {
+  width: 500px;
+}
 /* form  https://codepen.io/ZachSaucier/pen/AIJpe*/
 .formfooter h2 {
   font-size: 50px;
 }
 form.formfooter { 
-  max-width:420px; 
+  max-width:800px; 
   margin:50px auto; 
   padding-top: 40px;
   padding-bottom: 40px;
