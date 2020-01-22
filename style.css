@@ -304,9 +304,12 @@ h2.navbar-brand.logotxt{
   font-family: 'Barriecito', cursive;
 }
 .item-d:hover {
-background-image: url(images/Kiosko.jpg);
-transition: 0.7s;
-border: 50px #84DCC6 solid;
+  transition: 0.7s;
+  background-image: url(images/Kiosko.jpg);
+  border: 50px #84DCC6 solid;
+}
+.item-d:not(:hover){
+  transition: 0.7s;
 }
 
 .item-e {
@@ -724,7 +727,11 @@ main h2 {
   text-align: center;
   padding-top: 100px;
   font-size: 50px;
-  
+}
+@media (max-width:900px){
+  main h2 {
+    padding-top: 150px;
+  }
 }
 /* form  https://codepen.io/ZachSaucier/pen/AIJpe*/
 .formfooter h2 {
@@ -735,6 +742,12 @@ form.formfooter {
   margin:50px auto; 
   padding-top: 40px;
   padding-bottom: 40px;
+}
+@media (max-width:900px){
+  form.formfooter {
+    max-width: auto;
+    padding: 0px 20px 20px;
+  }
 }
 .feedback-input {
   color:black;
