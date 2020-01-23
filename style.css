@@ -296,28 +296,28 @@ h2.navbar-brand.logotxt{
   transition: 0.7s;
   border: 50px #4062BB solid;
 }
-.item-d {
+.item-d{
   grid-area: mangiare;
   grid-column-start: 12;
   grid-column-end: 24;
   grid-row-start: 2;
   grid-row-end: 11;
   background-color: #84DCC6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px;
-  font-family: 'Barriecito', cursive;
 }
 .item-d:hover {
   transition: 0.7s;
   background-image: url(images/Kiosko.jpg);
   border: 50px #84DCC6 solid;
 }
-.item-d:not(:hover){
-  transition: 0.7s;
+.item-d a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-family: 'Barriecito', cursive;
 }
-
 .item-e {
   grid-area: svagarsileft;
   grid-column-start: 1;
@@ -521,7 +521,6 @@ section.container-fluid {
 }
 /* Barra ricerca */
 .bannerricercasfondo {
-  margin-top: 60px;
   padding-top: 40px;
   height: 300px;
   width: 100%;
@@ -583,7 +582,7 @@ section.container-fluid {
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
 }
-/* Main & Articles */
+/* HOMEPAGE Main & Articles */
 .sfondomain {
   height: 100vh;
 }
@@ -691,35 +690,15 @@ section.container-fluid {
 .twitter:hover {
   opacity: 0.5;
 }
+/* Pagina single -------------------------------------------------------------------*/
+.mainsingle {
+  height: 100vh;
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Pagina contacts */
+/* Pagina contacts ---------------------------------------------------------------- */
 .active > a {
   position: relative;
 }
@@ -742,6 +721,11 @@ section.container-fluid {
   transform: scaleX(1);
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
+}
+@media (max-width:900px){
+  .active {
+    display: none;
+  }
 }
 main {
   height: 100%;
