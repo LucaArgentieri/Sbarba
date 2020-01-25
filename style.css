@@ -290,7 +290,7 @@ h2.navbar-brand.logotxt{
   align-items: center;
   font-size: 40px;
   font-family: 'Barriecito', cursive;
-  background-image: url(images/ga.jpg);
+  background-image: url(images/coworking.jpg);
 }
 .item-c:hover {
   transition: 0.7s;
@@ -306,7 +306,7 @@ h2.navbar-brand.logotxt{
 }
 .item-d:hover {
   transition: 0.7s;
-  background-image: url(images/Kiosko.jpg);
+  background-image: url(images/food.jpg);
   border: 50px #84DCC6 solid;
 }
 .item-d a {
@@ -330,7 +330,7 @@ h2.navbar-brand.logotxt{
   align-items: center;
   font-size: 40px;
   font-family: 'Barriecito', cursive;
-  background-image: url(images/faf.jpg);
+  background-image: url(images/fun.jpg);
 }
 .item-e:hover {
   transition: 0.7s;
