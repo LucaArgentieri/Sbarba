@@ -404,6 +404,7 @@ section.container-fluid {
 @media (max-width:900px){
   section.container-fluid {
     margin-top: 100px;
+    height: 600px;
   }
   .item-a {
     grid-area: alloggiare;
@@ -622,11 +623,12 @@ section.container-fluid {
 .sfondofooter {
   height: auto;
   margin-top: -50px;
-  background-color: #FF8C80;
+  background-color: #7D82B8;
 }
 .titolosocial {
   text-align: center;
   padding-top: 20px;
+  color: white;
 }
 .sfondofooter p{
   display: flex;
@@ -635,6 +637,7 @@ section.container-fluid {
   margin-bottom: 0px;
   padding-left: 20px;
   padding-right: 20px;
+  color: white;
 }
 .sfondofooter hr {
   height: 5px;
@@ -701,7 +704,6 @@ main.container-fluid {
   display: grid;
   grid-template-columns: repeat(18, 1fr);
   grid-template-rows: repeat(5, 5vh);
-  height: 280px;
 }
 main.container-fluid a:hover {
   color: black;
@@ -803,7 +805,7 @@ main.container-fluid a:hover {
 /* Responsive Grid Single */
 @media (max-width:900px){
   main.container-fluid {
-    height: 100vh;
+    height: 500px;
     margin-top: 100px;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
@@ -884,6 +886,21 @@ main.container-fluid a:hover {
     font-family: 'Barriecito', cursive;
   }
 }
+@media (max-height:1366px){
+  main.container-fluid {
+    height: auto;
+  }
+}
+@media (max-height:1025px){
+  main.container-fluid {
+    height: 650px;
+  }
+}
+@media (max-height:812px){
+  main.container-fluid {
+    height: 550px;
+  }
+}
 .containertitlesingle {
   display: flex;
   justify-content: center;
@@ -896,10 +913,12 @@ main.container-fluid a:hover {
 .containerbox {
   display: flex;
   justify-content: space-around;
+  align-content: center;
   padding-bottom: 50px;
   margin-bottom: 20px;
-  padding-left: 900px;
-  padding-right: 900px;
+  width: auto;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .cube1{
   height: 20px;
