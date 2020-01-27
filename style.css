@@ -258,28 +258,52 @@ h2.navbar-brand.logotxt{
   grid-column-end: 35;
   grid-row-start: 1;
   grid-row-end: 6;
-  background-color: #4062BB;
+  position: relative;
+}
+.item-c .background {
+  background-image: url(images/coworking.jpg);
+  background-size: cover;
+  height: 100%;
+  filter: grayscale(100%) contrast(50%) blur(1px);
+}
+.item-c .overlay {
+  background-color: rgba(64, 98, 187, 0.6);
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  }
+.item-c a {
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 40px;
   font-family: 'Barriecito', cursive;
-  background-image: url(images/coworking.jpg);
-  background-size: cover;
-}
-.item-c:hover {
-  transition: 0.7s;
-  border: 50px #4062BB solid;
 }
 .item-d {
   grid-column-start: 12;
   grid-column-end: 24;
   grid-row-start: 2;
-  grid-row-end: 11; 
-  background-image: url(images/food.jpg);
-  background-size: cover;
+  grid-row-end: 11;
   position: relative;
 }
+.item-d .background {
+  background-image: url(images/food.jpg);
+  background-size: cover;
+  height: 100%;
+  filter: grayscale(100%) contrast(50%) blur(1px);
+}
+.item-d .overlay {
+  background-color: rgba(132, 220, 198, 0.6);
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  }
 .item-d a {
   height: 100%;
   width: 100%;
@@ -294,18 +318,30 @@ h2.navbar-brand.logotxt{
   grid-column-end: 12;
   grid-row-start: 7;
   grid-row-end: 12;
-  background-color: #4062BB;
+  position: relative;
+}
+.item-e .background {
+  background-image: url(images/fun.jpg);
+  background-size: cover;
+  height: 100%;
+  filter: grayscale(100%) contrast(50%) blur(1px);
+}
+.item-e .overlay {
+  background-color: rgba(64, 98, 187, 0.6);
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  }
+.item-e a {
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 40px;
   font-family: 'Barriecito', cursive;
-  background-image: url(images/fun.jpg);
-  background-size: cover;
-}
-.item-e:hover {
-  transition: 0.7s;
-  border: 50px #4062BB solid;
 }
 .item-f {
   grid-column-start: 12;
@@ -337,6 +373,12 @@ h2.navbar-brand.logotxt{
   align-items: center;
   font-size: 40px;
   font-family: 'Barriecito', cursive;
+}
+.no-background-effects {
+  filter: none !important;
+}
+.no-background-color {
+  background: none !important;
 }
 
 /* 34 colonne */
