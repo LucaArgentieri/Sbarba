@@ -28,9 +28,7 @@ body.addEventListener('click', (e) => {
 // mouseover/mouseleave effects on nav-grid
 // tre pezzi di codice per tre elementi --> ridurre a un solo pezzo, se possibile
 // item-c: studiare
-var x = window.matchMedia("(min-width:901px)");
 
-if (x.matches) {
 let on_mouse_over = document.getElementsByClassName("over_effect")[0];
 let background_effect = document.getElementsByClassName("background")[0];
 let color_filter = document.getElementsByClassName("overlay")[0];
@@ -39,9 +37,9 @@ on_mouse_over.addEventListener("mouseover", over);
 
 function over() {
   background_effect.classList.add("no-background-effects");
-  background_effect.style.transition = "1.5s";
+  background_effect.style.transition = "1s";
   color_filter.classList.add("no-background-color");
-  color_filter.style.transition = "1.5s";
+  color_filter.style.transition = "1s";
   }
 
 on_mouse_over.addEventListener("mouseleave", leave);
@@ -61,9 +59,9 @@ on_mouse_over_a.addEventListener("mouseover", over_a);
 
 function over_a() {
   background_effect_a.classList.add("no-background-effects");
-  background_effect_a.style.transition = "1.5s";
+  background_effect_a.style.transition = "1s";
   color_filter_a.classList.add("no-background-color");
-  color_filter_a.style.transition = "1.5s";
+  color_filter_a.style.transition = "1s";
   }
 
 on_mouse_over_a.addEventListener("mouseleave", leave_a);
@@ -83,9 +81,9 @@ on_mouse_over_b.addEventListener("mouseover", over_b);
 
 function over_b() {
   background_effect_b.classList.add("no-background-effects");
-  background_effect_b.style.transition = "1.5s";
+  background_effect_b.style.transition = "1s";
   color_filter_b.classList.add("no-background-color");
-  color_filter_b.style.transition = "1.5s";
+  color_filter_b.style.transition = "1s";
   }
 
 on_mouse_over_b.addEventListener("mouseleave", leave_b);
@@ -93,7 +91,6 @@ on_mouse_over_b.addEventListener("mouseleave", leave_b);
 function leave_b() {
   background_effect_b.classList.remove("no-background-effects");
   color_filter_b.classList.remove("no-background-color");
-}
 }
 
 
