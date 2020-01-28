@@ -387,6 +387,31 @@ h2.navbar-brand.logotxt{
 .no-background-color {
   background: none !important;
 }
+@media (max-width: 900px){
+  .no-background-effects {
+    filter: grayscale(100%) contrast(50%) blur(1px) !important;
+  }
+  .item-c .no-background-color {
+    background: rgb(64, 98, 187) !important;
+  }
+  .item-c .overlay {
+    background-color: rgb(64, 98, 187) !important;
+    transition: 0s !important;
+  }
+  .item-e .no-background-color {
+    background: rgb(64, 98, 187) !important;
+  }
+  .item-e .overlay {
+    background-color: rgb(64, 98, 187) !important;
+    transition: 0s !important;
+  }
+  .item-d .no-background-color {
+    background:  rgb(132, 220, 198) !important;
+  }
+  .item-d .overlay {
+    transition: 0s !important;
+}
+}
 /* Searchbar */ 
 .searchicon {
   width: 30px;

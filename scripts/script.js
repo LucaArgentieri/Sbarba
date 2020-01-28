@@ -48,7 +48,6 @@ function leave() {
   background_effect.classList.remove("no-background-effects");
   color_filter.classList.remove("no-background-color");
 }
-
 // item-d: mangiare
 
 let on_mouse_over_a = document.getElementsByClassName("over_effect")[1];
