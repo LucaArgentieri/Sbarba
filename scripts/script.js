@@ -28,9 +28,7 @@ body.addEventListener('click', (e) => {
 // mouseover/mouseleave effects on nav-grid
 // tre pezzi di codice per tre elementi --> ridurre a un solo pezzo, se possibile
 // item-c: studiare
-var x = window.matchMedia("(min-width:901px)");
 
-if (x.matches) {
 let on_mouse_over = document.getElementsByClassName("over_effect")[0];
 let background_effect = document.getElementsByClassName("background")[0];
 let color_filter = document.getElementsByClassName("overlay")[0];
@@ -50,7 +48,6 @@ function leave() {
   background_effect.classList.remove("no-background-effects");
   color_filter.classList.remove("no-background-color");
 }
-
 // item-d: mangiare
 
 let on_mouse_over_a = document.getElementsByClassName("over_effect")[1];
@@ -94,6 +91,4 @@ function leave_b() {
   background_effect_b.classList.remove("no-background-effects");
   color_filter_b.classList.remove("no-background-color");
 }
-}
-
 
