@@ -190,7 +190,8 @@ h2.navbar-brand.logotxt{
 .menu-items.fs {
   transform: translateY(0);
   pointer-events: auto;
-  opacity: 0.9;
+  opacity: 1;
+
 }
 .menu-items.fs div {
   opacity: 1;
@@ -303,7 +304,13 @@ h2.navbar-brand.logotxt{
   right:0;
   bottom:0;
   left:0;
+}
+@media (max-width:900px){
+  .item-d .overlay {
+    background-color: rgb(132, 220, 198);
+    transition: 0s;
   }
+}
 .item-d a {
   height: 100%;
   width: 100%;
@@ -333,7 +340,7 @@ h2.navbar-brand.logotxt{
   right:0;
   bottom:0;
   left:0;
-  }
+}
 .item-e a {
   height: 100%;
   width: 100%;
@@ -388,7 +395,7 @@ h2.navbar-brand.logotxt{
 }
 section.container-fluid a:hover {
   color: black;
-  opacity: 0.7;
+  opacity: 1;
   transform: scale(1.2);
   text-decoration: none;
 }
