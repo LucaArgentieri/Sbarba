@@ -400,7 +400,7 @@ section.container-fluid a:hover {
   text-decoration: none;
 }
 section.griglia-nav {
-  height: auto;
+  height: 500px;
   margin-top: 130px;
   margin-bottom: 50px;
   grid-column-gap: 10px;
@@ -412,7 +412,7 @@ section.griglia-nav {
 @media (max-width:900px){
   section.griglia-nav {
     margin-top: 100px;
-    height: 600px;
+    height: 550px;
   }
   .item-a {
     grid-column-start: 1;
