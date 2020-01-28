@@ -413,9 +413,14 @@ h2.navbar-brand.logotxt{
 }
 }
 /* Searchbar */ 
+/* Barra ricerca */
 .bannerricerca {
+  text-align: center;
+}
+.containersearchbar {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .searchicon {
   width: 30px;
@@ -426,8 +431,7 @@ h2.navbar-brand.logotxt{
 #search {
   margin-bottom: 50px;
   height: 80px;
-  width: 80px;
-  margin-left: 300px; /* sposta a destra searchbar */
+  width: 80px; /* sposta a destra searchbar */
   border: solid 5px;
   border-radius: 50px;
   display: flex;
@@ -468,7 +472,6 @@ h2.navbar-brand.logotxt{
 }
 .titolobarraricerca {
   font-size: 50px;
-  margin-left: 100px;
   margin-bottom: 5px;
 }
 .parbarraricerca {
@@ -529,10 +532,16 @@ section.griglia-nav {
   grid-template-columns: repeat(34, 1fr);
   grid-template-rows: repeat(11, 5vh);
 }
+@media (min-width:900px){
+  section.griglia-nav {
+    margin-bottom: 150px;
+  }
+}
 @media (max-width:900px){
   section.griglia-nav {
     margin-top: 100px;
     height: 550px;
+    margin-bottom: 100px;
   }
   .item-a {
     grid-column-start: 1;
@@ -639,7 +648,6 @@ section.griglia-nav {
     display: none;
   }
 }
-/* Barra ricerca */
 
 /* inserire qui il CSS */
 
@@ -1123,16 +1131,14 @@ main {
   padding-top: 150px;
   font-size: 50px;
 }
-@media (max-width:900px){
-  main h2 {
-    padding-top: 80px;
-  }
-}
 .secondotitolocontatti {
-  margin-top: 50px;
   font-size: 50px;
   text-align: center;
-  margin-bottom: 5    0px;
+  margin-bottom: 30px;
+}
+.secondotitolocontatti p {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 .maincontatti {
   display: flex;
@@ -1166,6 +1172,76 @@ main {
     background-color: pink;
     margin-top: -40px;
   }
+}
+/* Card profilo */
+.contenitorecardprofilo {
+  margin-bottom: 50px;
+  height: 600px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width:900px){
+  .contenitorecardprofilo {
+    height: 150vh;
+  }
+}
+.contenitorecardprofilo h4 {
+  text-align: center;
+  font-size: 30px;
+}
+.contenitorecardprofilo p {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.card_1 {
+  border: 15px solid #FF8C80 ;
+  width: 400px;
+  height: 500px;
+  box-shadow:20px 20px 50px gray; 
+}
+.card_2 {
+  border: 15px solid #A0E884;
+  width: 400px;
+  height: 500px;
+  box-shadow:20px 20px 50px gray; 
+}
+@media (max-width:900px){
+  .card_1 {
+    margin-bottom: 50px;
+  }
+  .card_2 {
+    margin-bottom: 50px;
+  }
+}
+.containercard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenitorecardprofilo button {
+  background-color: #4062BB;
+  border-radius: 40px;
+  font-size: 25px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+}
+.contenitorecardprofilo button:hover {
+  box-shadow: 10px 5px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.containercontatti {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 30px;
+}
+.containercontatti a {
+  width: 50px;
+}
+.containercontatti a:hover {
+  box-shadow: 10px 5px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .barracolore {
   height: 50px;
