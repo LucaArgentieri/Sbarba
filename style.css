@@ -418,7 +418,6 @@ h2.navbar-brand.logotxt{
   height: 30px;
   display: flex;
   z-index: 0;
-
 }
 #search {
   margin-top: 25px;
@@ -473,10 +472,6 @@ h2.navbar-brand.logotxt{
   font-family: 'Montserrat', sans-serif;
   padding-left: 40px;
   padding-top: 10px;
-}
-/* Main & Articles */
-.sfondomain {
-  height: 100vh;
 }
 @media (max-width:630px){
   #search.active {
