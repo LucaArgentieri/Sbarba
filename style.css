@@ -1047,11 +1047,7 @@ main.container-fluid a:hover {
     height: auto;
   }
 }
-@media (max-height:1025px){
-  main.container-fluid {
-    height: 650px;
-  }
-}
+
 @media (max-height:812px){
   main.container-fluid {
     height: 550px;
@@ -1066,30 +1062,35 @@ main.container-fluid a:hover {
   text-align: center;
   padding-bottom: 20px;
 }
+.containerboxgrande {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .containerbox {
   display: flex;
   justify-content: space-around;
   align-content: center;
-  padding-bottom: 50px;
-  margin-bottom: 20px;
-  width: auto;
-  margin-left: 100px;
-  margin-right: 100px;
+  width: 200px;
 }
 .cube1{
   height: 20px;
   width: 20px;
   background: rgb(125, 130, 184);
+  box-shadow:5px 5px 5px gray; 
 }
 .cube2{
   height: 20px;
   width: 20px;
   background: rgb(132, 220, 198);
+  transform: rotate(45deg);
+  box-shadow:5px 5px 5px gray; 
 }
 .cube3{
   height: 20px;
   width: 20px;
   background: rgb(255, 140, 128);
+  box-shadow:5px 5px 5px gray; 
 }
 .singlearticle {
   height: 100vh;
