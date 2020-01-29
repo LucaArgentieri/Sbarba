@@ -535,9 +535,9 @@ section.griglia-nav {
   grid-template-columns: repeat(34, 1fr);
   grid-template-rows: repeat(11, 5vh);
 }
-@media (max-width:1900px){
+@media (max-width:2000px){
   section.griglia-nav {
-    margin-bottom: 50px;
+    margin-bottom: 150px;
   }
 }
 @media (height:1366px){
@@ -545,20 +545,25 @@ section.griglia-nav {
     margin-bottom: 440px;
   }
 }
+@media (height:1024px){
+  section.griglia-nav {
+    margin-bottom: 150px;
+  }
+}
 @media (max-width:900px){
   section.griglia-nav {
     margin-top: 100px;
     height: 550px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 }
 @media (min-width:900px){
   section.griglia-nav {
     margin-bottom: 80px;
   }
 }
-@media (height:1024px){
+@media (max-height:823px){
   section.griglia-nav {
-    margin-bottom: 150px;
+    margin-bottom: 50px;
   }
 }
 @media (max-height:736px){
