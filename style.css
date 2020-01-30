@@ -555,16 +555,15 @@ section.griglia-nav {
     margin-top: 100px;
   }
 }
-@media (max-height:736px){
+/* @media (max-height:736px){
   section.griglia-nav {
     margin-bottom: 0px;
   }
-}
-@media (max-height:667px){
+} */
+@media (max-width:900px){
   section.griglia-nav {
     margin-bottom: 0px;
   }
-}
   .item-a {
     grid-column-start: 1;
     grid-column-end: 18;
@@ -664,7 +663,7 @@ section.griglia-nav {
     font-family: 'Barriecito', cursive;
     padding-top: 110px;
   }
-
+}
 @media (min-width:900px){
   .item-a p {
     display: none;

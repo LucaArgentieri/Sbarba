@@ -39,7 +39,7 @@ let color_filter = document.getElementsByClassName("overlay")[0];
 on_mouse_over.addEventListener("mouseover", over);
 
 function over() {
-  on_mouse_over.style.transform = "translate(-5px, -5px)";
+  on_mouse_over.style.transform = "translate(0px, -3px)";
   on_mouse_over.style.boxShadow = "5px 5px 3px gray";
   on_mouse_over.style.transition = "1s";
   background_effect.classList.add("no-background-effects");
@@ -65,7 +65,7 @@ let color_filter_a = document.getElementsByClassName("overlay")[1];
 on_mouse_over_a.addEventListener("mouseover", over_a);
 
 function over_a() {
-  on_mouse_over_a.style.transform = "translate(-5px, -5px)";
+  on_mouse_over_a.style.transform = "translate(0px, -3px)";
   on_mouse_over_a.style.boxShadow = "5px 5px 3px gray";
   on_mouse_over_a.style.transition = "1s";
   background_effect_a.classList.add("no-background-effects");
@@ -92,7 +92,7 @@ let color_filter_b = document.getElementsByClassName("overlay")[2];
 on_mouse_over_b.addEventListener("mouseover", over_b);
 
 function over_b() {
-  on_mouse_over_b.style.transform = "translate(-5px, -5px)";
+  on_mouse_over_b.style.transform = "translate(0px, -3px)";
   on_mouse_over_b.style.boxShadow = "5px 5px 3px gray";
   on_mouse_over_b.style.transition = "1s";
   background_effect_b.classList.add("no-background-effects");
