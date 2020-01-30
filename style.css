@@ -413,11 +413,16 @@ h2.navbar-brand.logotxt{
 }
 }
 /* Searchbar */ 
+/* Barra ricerca */
 .bannerricerca {
+  text-align: center;
+}
+.containersearchbar {
   display: flex;
   justify-content: center;
   border: 2px solid black;
   margin-bottom: 50px;
+  align-items: center;
 }
 .searchicon {
   width: 30px;
@@ -427,8 +432,7 @@ h2.navbar-brand.logotxt{
 }
 #search {
   height: 80px;
-  width: 80px;
-  margin-left: 300px; /* sposta a destra searchbar */
+  width: 80px; /* sposta a destra searchbar */
   border: solid 5px;
   border-radius: 50px;
   display: flex;
@@ -469,13 +473,17 @@ h2.navbar-brand.logotxt{
 }
 .titolobarraricerca {
   font-size: 50px;
-  margin-left: 100px;
   margin-bottom: 5px;
 }
 .parbarraricerca {
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
   padding-left: 7.5px;
+}
+@media (max-width:900px){
+  #search-input.active {
+    width: 500px;
+  }
 }
 @media (max-width:630px){
   #search.active {
@@ -495,12 +503,11 @@ h2.navbar-brand.logotxt{
 }
 @media (max-width:416px){
   #search.active {
-    width: 300px;
+    width: 350px;
     transition: width 0.1s linear;
   }
   #search-input.active {
-    width: 200px;
-    margin-left: 10px;
+    width: 250px;
     visibility: visible;
     text-align: left;
   }
@@ -523,16 +530,40 @@ section.container-fluid a:hover {
 section.griglia-nav {
   height: auto;
   margin-top: 130px;
-  margin-bottom: 50px;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   display: grid;
   grid-template-columns: repeat(34, 1fr);
   grid-template-rows: repeat(11, 5vh);
 }
+@media (max-width:2000px){
+  section.griglia-nav {
+    margin-bottom: 150px;
+  }
+}
+@media (height:1366px){
+  section.griglia-nav {
+    margin-bottom: 440px;
+  }
+}
+@media (height:1024px){
+  section.griglia-nav {
+    margin-bottom: 150px;
+  }
+}
 @media (max-width:900px){
   section.griglia-nav {
     margin-top: 100px;
+  }
+}
+@media (max-height:736px){
+  section.griglia-nav {
+    margin-bottom: 0px;
+  }
+}
+@media (max-height:667px){
+  section.griglia-nav {
+    margin-bottom: 0px;
   }
   .item-a {
     grid-column-start: 1;
@@ -634,12 +665,12 @@ section.griglia-nav {
     padding-top: 110px;
   }
 }
+
 @media (min-width:900px){
   .item-a p {
     display: none;
   }
 }
-/* Barra ricerca */
 
 /* inserire qui il CSS */
 
@@ -1045,16 +1076,6 @@ main.container-fluid a:hover {
     height: auto;
   }
 }
-@media (max-height:1025px){
-  main.container-fluid {
-    height: 650px;
-  }
-}
-@media (max-height:812px){
-  main.container-fluid {
-    height: 550px;
-  }
-}
 .containertitlesingle {
   display: flex;
   justify-content: center;
@@ -1064,42 +1085,47 @@ main.container-fluid a:hover {
   text-align: center;
   padding-bottom: 20px;
 }
+.containerboxgrande {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .containerbox {
   display: flex;
   justify-content: space-around;
   align-content: center;
-  padding-bottom: 50px;
-  margin-bottom: 20px;
-  width: auto;
-  margin-left: 100px;
-  margin-right: 100px;
+  width: 200px;
 }
 .cube1{
   height: 20px;
   width: 20px;
   background: rgb(125, 130, 184);
+  box-shadow:5px 5px 5px gray; 
 }
 .cube2{
   height: 20px;
   width: 20px;
   background: rgb(132, 220, 198);
+  transform: rotate(45deg);
+  box-shadow:5px 5px 5px gray; 
 }
 .cube3{
   height: 20px;
   width: 20px;
   background: rgb(255, 140, 128);
+  box-shadow:5px 5px 5px gray; 
 }
 .singlearticle {
   height: 100vh;
 }
 /* Pagina contacts ---------------------------------------------------------------- */
-.active > a {
+.activecontacts > a {
   position: relative;
 }
-.active a:hover {
+.activecontacts a:hover {
   text-decoration: none;
 }
-.active > a:before {
+.activecontacts > a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -1117,7 +1143,7 @@ main.container-fluid a:hover {
   transition: all 0.3s ease-in-out 0s;
 }
 @media (max-width:900px){
-  .active {
+  .activecontacts {
     display: none;
   }
 }
@@ -1129,16 +1155,14 @@ main {
   padding-top: 150px;
   font-size: 50px;
 }
-@media (max-width:900px){
-  main h2 {
-    padding-top: 80px;
-  }
-}
 .secondotitolocontatti {
-  margin-top: 50px;
   font-size: 50px;
   text-align: center;
-  margin-bottom: 5    0px;
+  margin-bottom: 30px;
+}
+.secondotitolocontatti p {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 .maincontatti {
   display: flex;
@@ -1172,6 +1196,104 @@ main {
     background-color: pink;
     margin-top: -40px;
   }
+}
+/* Card profilo */
+.contenitorecardprofilo {
+  margin-bottom: 50px;
+  height: 600px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (height:1024px){
+  .contenitorecardprofilo {
+    height: 100vh;
+  }
+  .contenitorecardprofilo {
+    margin-bottom: 150px;
+  }
+}
+@media(max-height:900px){
+  .contenitorecardprofilo {
+    height: auto;
+  }
+}
+
+.contenitorecardprofilo h4 {
+  text-align: center;
+  font-size: 30px;
+}
+.contenitorecardprofilo p {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.container_image_card {
+  display: flex;
+  justify-content: center;
+}
+.image_card_1 {
+  background-image: url(images/coworking.jpg);
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+.image_card_2 {
+  background-image: url(images/coworking.jpg);
+  background-size: cover;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.card_1 {
+  border: 15px solid #FF8C80 ;
+  width: 400px;
+  height: 500px;
+  box-shadow:20px 20px 50px gray; 
+  border-radius: 150px;
+}
+.card_2 {
+  border: 15px solid #A0E884;
+  width: 400px;
+  height: 500px;
+  box-shadow:20px 20px 50px gray; 
+}
+@media (max-width:900px){
+  .card_1 {
+    margin-bottom: 50px;
+  }
+  .card_2 {
+    margin-bottom: 50px;
+  }
+}
+.containercard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenitorecardprofilo button {
+  background-color: #4062BB;
+  border-radius: 40px;
+  font-size: 25px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+}
+.contenitorecardprofilo button:hover {
+  box-shadow: 10px 5px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.containercontatti {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 30px;
+}
+.containercontatti a {
+  width: 50px;
+}
+.containercontatti a:hover {
+  box-shadow: 10px 5px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .barracolore {
   height: 50px;
