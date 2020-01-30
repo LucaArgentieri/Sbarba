@@ -424,15 +424,15 @@ h2.navbar-brand.logotxt{
   align-items: center;
 }
 .searchicon {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   display: flex;
   z-index: 0;
 }
 #search {
   height: 80px;
   width: 80px; /* sposta a destra searchbar */
-  border: solid 5px;
+  border: solid #52489C 5px;
   border-radius: 50px;
   display: flex;
   justify-content: center;
@@ -447,7 +447,7 @@ h2.navbar-brand.logotxt{
   justify-content: start;
 }
 #search-input {
-  color: black;
+  color: #52489C;
   border: 0;
   outline: 0;
   background: none;
@@ -526,6 +526,7 @@ section.container-fluid a:hover {
   transform: scale(1.2);
   text-decoration: none;
 }
+
 section.griglia-nav {
   height: auto;
   margin-top: 130px;
@@ -1220,7 +1221,7 @@ main {
 
 .contenitorecardprofilo h4 {
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
 }
 .contenitorecardprofilo p {
   text-align: center;
@@ -1237,22 +1238,25 @@ main {
   width: 200px;
   border-radius: 100px;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 .image_card_2 {
   background-image: url(images/coworking.jpg);
   background-size: cover;
   height: 200px;
+  width: 200px;
+  border-radius: 100px;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 .card_1 {
-  border: 15px solid #FF8C80 ;
+  border: 5px solid #FF8C80 ;
   width: 400px;
   height: 500px;
   box-shadow:20px 20px 50px gray; 
-  border-radius: 150px;
 }
 .card_2 {
-  border: 15px solid #A0E884;
+  border: 5px solid #A0E884;
   width: 400px;
   height: 500px;
   box-shadow:20px 20px 50px gray; 
@@ -1270,11 +1274,36 @@ main {
   justify-content: center;
   align-items: center;
 }
-.contenitorecardprofilo button {
-  background-color: #4062BB;
+.containercard2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containercard button img {
+  width: 35px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  vertical-align: middle;
+}
+.containercard2 button img {
+  width: 35px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  vertical-align: middle;
+}
+.containercard button {
+  background-color: #FF8C80;
   border-radius: 40px;
   font-size: 25px;
-  width: 200px;
+  width: 225px;
+  height: 50px;
+  text-align: center;
+}
+.containercard2 button {
+  background-color: #A0E884;
+  border-radius: 40px;
+  font-size: 25px;
+  width: 225px;
   height: 50px;
   text-align: center;
 }
