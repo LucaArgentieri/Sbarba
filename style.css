@@ -420,7 +420,6 @@ h2.navbar-brand.logotxt{
 .containersearchbar {
   display: flex;
   justify-content: center;
-  border: 2px solid black;
   margin-bottom: 50px;
   align-items: center;
 }
@@ -565,6 +564,7 @@ section.griglia-nav {
   section.griglia-nav {
     margin-bottom: 0px;
   }
+}
   .item-a {
     grid-column-start: 1;
     grid-column-end: 18;
@@ -664,7 +664,6 @@ section.griglia-nav {
     font-family: 'Barriecito', cursive;
     padding-top: 110px;
   }
-}
 
 @media (min-width:900px){
   .item-a p {
