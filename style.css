@@ -308,6 +308,7 @@ h2.navbar-brand.logotxt{
 @media (max-width:900px){
   .item-d .overlay {
     background-color: rgb(132, 220, 198);
+    border: 10px solid white;
     transition: 0s;
   }
 }
@@ -395,7 +396,8 @@ h2.navbar-brand.logotxt{
     background: rgb(64, 98, 187) !important;
   }
   .item-c .overlay {
-    background-color: rgb(64, 98, 187) !important;
+    background-color: #A0E884 !important;
+    border: 8px solid white;
     transition: 0s !important;
   }
   .item-e .no-background-color {
@@ -403,6 +405,7 @@ h2.navbar-brand.logotxt{
   }
   .item-e .overlay {
     background-color: rgb(64, 98, 187) !important;
+    border: 10px solid white;
     transition: 0s !important;
   }
   .item-d .no-background-color {
@@ -541,11 +544,6 @@ section.griglia-nav {
     margin-bottom: 150px;
   }
 }
-@media (height:1366px){
-  section.griglia-nav {
-    margin-bottom: 440px;
-  }
-}
 @media (height:1024px){
   section.griglia-nav {
     margin-bottom: 150px;
@@ -556,14 +554,9 @@ section.griglia-nav {
     margin-top: 100px;
   }
 }
-/* @media (max-height:736px){
-  section.griglia-nav {
-    margin-bottom: 0px;
-  }
-} */
 @media (max-width:900px){
   section.griglia-nav {
-    margin-bottom: 0px;
+    margin-bottom: 50px;
   }
   .item-a {
     grid-column-start: 1;
@@ -611,8 +604,8 @@ section.griglia-nav {
     padding-bottom: 50px;
   }
   .item-d {
-    grid-column-start: 9;
-    grid-column-end: 27;
+    grid-column-start: 10;
+    grid-column-end: 26;
     grid-row-start: 4;
     grid-row-end: 8;
     display: flex;
@@ -621,6 +614,11 @@ section.griglia-nav {
     font-size: 40px;
     font-family: 'Barriecito', cursive;
     z-index: 0;
+    background: white;
+    transform: rotate(-45deg);
+  }
+  .item-d a {
+    transform: rotate(45deg);
   }
   .item-e {
     grid-column-start: 1;
