@@ -562,19 +562,23 @@ section.griglia-nav {
     grid-column-start: 1;
     grid-column-end: 18;
     grid-row-start: 1;
-    grid-row-end: 5;
+    grid-row-end: 7;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Barriecito', cursive;
     z-index: 0;
+  }
+  .item-a p {
+    padding-bottom: 30px;
   }
   .item-h {
     grid-column-start: 1;
     grid-column-end: 13;
     grid-row-start: 2;
     grid-row-end: 7;
+    display: none;
   }
   .item-h p {
     display: none;
@@ -648,19 +652,21 @@ section.griglia-nav {
     grid-column-end: 35;
     grid-row-start: 9;
     grid-row-end: 12;
-    
+    display: none;
   }
   .item-i {
     grid-column-start: 18;
     grid-column-end: 35;
     grid-row-start: 6;
-    grid-row-end: 11;
+    grid-row-end: 12;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 40px;
     font-family: 'Barriecito', cursive;
-    padding-top: 110px;
+  }
+  .item-i p {
+    padding-bottom: 30px;
   }
 }
 @media (min-width:900px){
