@@ -617,16 +617,15 @@ section.griglia-nav {
     align-items: center;
     font-size: 40px;
     font-family: 'Barriecito', cursive;
-    z-index: 0;
     background: white;
     transform: rotate(-45deg);
-    z-index: 1;
   }
   .item-d a {
     transform: rotate(45deg);
   }
   .item-e {
     grid-column-start: 1;
+    z-index: -1;
     grid-column-end: 18;
     grid-row-start: 7;
     grid-row-end: 12;
@@ -1255,10 +1254,20 @@ main {
   margin-top: 10px;
 }
 .card_1 {
-  border: 5px solid #FF8C80 ;
+  position: relative;
   width: 400px;
   height: 500px;
   box-shadow:20px 20px 50px gray; 
+}
+.card_1:before {
+  content : "";
+  position: absolute;
+  left    : 0;
+  bottom  : 0;
+  height  : 40%;
+  width   : 50%;  /* or 100px */
+  border-bottom: 5px solid #FF8C80;
+  border-left: 5px solid #FF8C80;
 }
 .card_2 {
   border: 5px solid #A0E884;
