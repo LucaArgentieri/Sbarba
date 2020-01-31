@@ -620,6 +620,7 @@ section.griglia-nav {
     z-index: 0;
     background: white;
     transform: rotate(-45deg);
+    z-index: 1;
   }
   .item-d a {
     transform: rotate(45deg);
