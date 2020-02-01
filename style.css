@@ -80,6 +80,12 @@ h2.navbar-brand.logotxt{
     padding-left: 2px;
   }
 }
+@media (max-width:321px){
+  .navbar-header p {
+    margin-top: -35px;
+    font-size: 17px;
+  }
+}
 .vocimenu > a {
   position: relative;
 }
@@ -222,7 +228,29 @@ h2.navbar-brand.logotxt{
     transition: 0.5s;
   }
 }
+
+
+
+
 /* Grid homepage desktop */
+.container-fluid a {
+  color: black;
+}
+section.container-fluid a:hover {
+  color: black;
+  opacity: 1;
+  transform: scale(1.2);
+  text-decoration: none;
+}
+section.griglia-nav {
+  height: auto;
+  margin-top: 130px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(34, 1fr);
+  grid-template-rows: repeat(11, 5vh);
+}
 .item-a {
   grid-column-start: 1;
   grid-column-end: 6;
@@ -305,13 +333,6 @@ h2.navbar-brand.logotxt{
   bottom:0;
   left:0;
 }
-@media (max-width:900px){
-  .item-d .overlay {
-    background-color: rgb(132, 220, 198);
-    border: 10px solid white;
-    transition: 0s;
-  }
-}
 .item-d a {
   height: 100%;
   width: 100%;
@@ -321,6 +342,16 @@ h2.navbar-brand.logotxt{
   font-size: 40px;
   font-family: 'Barriecito', cursive;
 }
+@media (max-width:900px){
+  .item-d .overlay {
+    background-color: rgb(132, 220, 198);
+    border: 10px solid white;
+    transition: 0s;
+    text-align: center;
+    font-size: 17px;
+  }
+}
+
 .item-e {
   grid-column-start: 1;
   grid-column-end: 12;
@@ -620,7 +651,6 @@ section.griglia-nav {
     align-items: center;
     font-size: 40px;
     font-family: 'Barriecito', cursive;
-    z-index: 0;
     background: white;
     transform: rotate(-45deg);
   }
@@ -629,6 +659,7 @@ section.griglia-nav {
   }
   .item-e {
     grid-column-start: 1;
+    z-index: -1;
     grid-column-end: 18;
     grid-row-start: 7;
     grid-row-end: 12;
@@ -677,9 +708,122 @@ section.griglia-nav {
     display: none;
   }
 }
-
-/* inserire qui il CSS */
-
+@media (max-width:321px){
+  section.griglia-nav {
+    height: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 50px;
+  }
+}
+/* Searchbar */ 
+/* Barra ricerca */
+.bannerricerca {
+  text-align: center;
+}
+.containersearchbar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  align-items: center;
+}
+.searchicon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  z-index: 0;
+}
+#search {
+  height: 80px;
+  width: 80px; /* sposta a destra searchbar */
+  border: solid #52489C 5px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+#search-input {
+  color: #52489C;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color: auto;
+  line-height: 40px;
+  transition: width 0.1s linear;
+}
+#search-input::placeholder {
+  color: black;
+  opacity: 0.5;
+}
+#search.active {
+  width: 600px;
+  transition: width 0.1s linear;
+}
+#search-input.active {
+  width: 500px;
+  margin-left: 30px;
+  visibility: visible;
+  text-align: left;
+}
+.titolobarraricerca {
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+.parbarraricerca {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 7.5px;
+}
+@media (max-width:900px){
+  #search-input.active {
+    width: 500px;
+  }
+}
+@media (max-width:630px){
+  #search.active {
+    width: 400px;
+    transition: width 0.1s linear;
+  }
+  #search-input.active {
+    width: 300px;
+    margin-left: 30px;
+    visibility: visible;
+    text-align: left;
+  }
+  #search-input {
+    font-size: 25px;
+    line-height: 200px;
+  }
+}
+@media (max-width:416px){
+  #search.active {
+    width: 350px;
+    transition: width 0.1s linear;
+  }
+  #search-input.active {
+    width: 250px;
+    visibility: visible;
+    text-align: left;
+  }
+  #search-input {
+    font-size: 17px;
+    line-height: 200px;
+  }
+}
+@media (max-width:321px){
+  #search-input.active {
+    margin-left: 0px;
+  }
+}
 /* HOMEPAGE Main & Articles */
 .sfondomain {
   height: auto;
@@ -776,7 +920,6 @@ section.griglia-nav {
   display: flex;
   padding: 10px;
 }
-
 .col_1 {
   width: 60%;
 }
@@ -810,52 +953,7 @@ img.cover {
   font-family: 'Barriecito', cursive;
   font-size: 35px;
 }
-@media (max-width:900px){
-  .grid_articles {
-    grid-template-rows: repeat(56, 5vh);
-}
-
-  .item_2 {
-    grid-column-start: 1;
-    grid-column-end: 35;
-    grid-row-start: 1;
-    grid-row-end: 15;
-    flex-direction: column-reverse;
-    justify-content: flex-end;
-  }
-  .col_1, .col_2 {
-    width: 100%;
-  }
-  figure.col_2 {
-    height: 200px;
-    margin-bottom: 20px;
-  }
-  .item_3, .item_4_a, .item_4_b,
-  .item_6, .item_8_a, .item_8_b, .item_9 {
-    display: none;
-  }
-  .item_5 {
-    grid-column-start: 1;
-    grid-column-end: 35;
-    grid-row-start: 15;
-    grid-row-end: 29;
-  }
-  .item_7 {
-    grid-column-start: 1;
-    grid-column-end: 35;
-    grid-row-start: 29;
-    grid-row-end: 43;
-  }
-  .item_10 {
-    grid-column-start: 1;
-    grid-column-end: 35;
-    grid-row-start: 43;
-    grid-row-end: 57;
-    flex-direction: column-reverse;
-    justify-content: flex-end;
-  }
-}
-/* Footer */
+/* Footer------------------------------------------------------------------------------- */
 .sfondofooter {
   height: auto;
   margin-top: 0px;
@@ -930,6 +1028,7 @@ img.cover {
   opacity: 0.5;
 }
 /* Pagina single -------------------------------------------------------------------*/
+/* Grid Single */
 .divsingle {
   height: 100vh;
 }
@@ -1127,6 +1226,13 @@ main.container-fluid a:hover {
     height: auto;
   }
 }
+@media (max-width:321px){
+  main.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+/* Contenitore titolo single page */
 .containertitlesingle {
   display: flex;
   justify-content: center;
@@ -1215,6 +1321,11 @@ main {
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
 }
+@media (max-width:900px){
+  .secondotitolocontatti p {
+    margin-bottom: 50px;
+  }
+}
 .maincontatti {
   display: flex;
   justify-content: center;
@@ -1240,6 +1351,8 @@ main {
   }
   .maincontatti img {
     padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .barracolore {
     height: 50px;
@@ -1270,7 +1383,6 @@ main {
     height: auto;
   }
 }
-
 .contenitorecardprofilo h4 {
   text-align: center;
   font-size: 40px;
@@ -1302,7 +1414,7 @@ main {
   margin-top: 10px;
 }
 .card_1 {
-  border: 5px solid #FF8C80 ;
+  border: 5px solid #FF8C80;
   width: 400px;
   height: 500px;
   box-shadow:20px 20px 50px gray; 
