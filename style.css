@@ -955,7 +955,7 @@ img.cover {
 }
 
 @media (max-width: 900px){
-  .grid-articles {
+  .grid_articles {
     grid-template-rows: repeat(56, 5vh);
   }
   .col_1, .col_2 {
