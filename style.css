@@ -953,6 +953,52 @@ img.cover {
   font-family: 'Barriecito', cursive;
   font-size: 35px;
 }
+
+@media (max-width: 900px){
+  .grid-articles {
+    grid-template-rows: repeat(56, 5vh);
+  }
+  .col_1, .col_2 {
+    width: 100%;
+  }
+  figure.col_2 {
+    margin-bottom: 20px;
+    height: 200px;
+  }
+  .item_3, .item_4_a, .item_4_b,
+  .item_6, .item_8_a, .item_8_b,
+  .item_9 {
+    display: none;
+  }
+  .item_2 {
+    grid-column-start: 1;
+    grid-column-end: 35;
+    grid-row-start: 1;
+    grid-row-end: 15;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .item_5 {
+    grid-column-start: 1;
+    grid-column-end: 35;
+    grid-row-start: 15;
+    grid-row-end: 29;
+  }
+  .item_7 {
+    grid-column-start: 1;
+    grid-column-end: 35;
+    grid-row-start: 29;
+    grid-row-end: 43;
+  }
+  .item_10 {
+    grid-column-start: 1;
+    grid-column-end: 35;
+    grid-row-start: 43;
+    grid-row-end: 57;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+}
 /* Footer------------------------------------------------------------------------------- */
 .sfondofooter {
   height: auto;
