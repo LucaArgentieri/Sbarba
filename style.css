@@ -834,7 +834,7 @@ section.griglia-nav {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(34, 1fr);
-  grid-template-rows: repeat(30, 5vh);
+  grid-template-rows: repeat(30, auto);
   margin-bottom: 50px;
 }
 .item_2 {
@@ -851,14 +851,14 @@ section.griglia-nav {
   grid-column-end: 35;
   grid-row-start: 1;
   grid-row-end: 9;
-  background-color: #FF8C80;
+  border: 15px solid #FF8C80;
 }
 .item_4_a {
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 9;
   grid-row-end: 13;
-  border: 25px solid #FFD670;;
+  border: 15px solid #FFD670;
 }
 .item_4_b {
   grid-column-start: 1;
@@ -880,14 +880,14 @@ section.griglia-nav {
   grid-column-end: 20;
   grid-row-start: 9;
   grid-row-end: 23;
-  background-color: #FF8C80;
+  border: 15px solid #84DCC6;
 }
 .item_7 {
   grid-column-start: 20;
   grid-column-end: 31;
   grid-row-start: 9;
   grid-row-end: 23;
-  border: 15px solid #FF8C80;
+  border: 15px solid #FFD670;
   padding: 10px;
 }
 .item_8_a {
@@ -902,14 +902,14 @@ section.griglia-nav {
   grid-column-end: 35;
   grid-row-start: 19;
   grid-row-end: 23;
-  border: 25px solid #A0E884;
+  border: 15px solid #A0E884;
 }
 .item_9 {
   grid-column-start: 1;
   grid-column-end: 10;
   grid-row-start: 23;
   grid-row-end: 31;
-  background-color: #FF8C80;
+  border: 15px solid #FF8C80;
 }
 .item_10 {
   grid-column-start: 10;
@@ -923,11 +923,11 @@ section.griglia-nav {
 .col_1 {
   width: 60%;
 }
-.col_2 {
-  overflow: hidden;
-  height: 100%;
-  padding: 0px;
+figure.col_2 {
+  min-height: 100%;
   width: 40%;
+  padding: 0px;
+  margin-bottom: 0px;
 }
 img.cover {
   width: 100%;
@@ -953,13 +953,16 @@ img.cover {
   font-family: 'Barriecito', cursive;
   font-size: 35px;
 }
+.abstract {
+ margin-bottom: 0px;
+}
 
-@media (max-width: 900px){
+@media (max-width: 900px) {
   .grid_articles {
-    grid-template-rows: repeat(56, 5vh);
+    grid-template-rows: repeat(56, auto);
   }
   .col_1, .col_2 {
-    width: 100%;
+    width: 100% !important;
   }
   figure.col_2 {
     margin-bottom: 20px;
@@ -1292,6 +1295,7 @@ main.container-fluid a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 35px;
 }
 .containerbox {
   display: flex;
@@ -1309,7 +1313,7 @@ main.container-fluid a:hover {
   height: 20px;
   width: 20px;
   background: rgb(132, 220, 198);
-  transform: rotate(45deg);
+  transform: rotate(50deg);
   box-shadow:5px 5px 5px gray; 
 }
 .cube3{
