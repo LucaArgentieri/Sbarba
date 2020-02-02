@@ -922,6 +922,7 @@ section.griglia-nav {
 }
 .col_1 {
   width: 60%;
+  margin-right: 10px;
 }
 figure.col_2 {
   min-height: 100%;
@@ -953,8 +954,43 @@ img.cover {
   font-family: 'Barriecito', cursive;
   font-size: 35px;
 }
+
+.data_autore {
+  text-align: center;
+}
+
+.data_autore span {
+  margin: 0px 10px;
+}
 .abstract {
- margin-bottom: 0px;
+ margin-bottom: 20px;
+ padding: 20px;
+ text-align: justify;
+ position: relative;
+}
+
+.abstract:after {
+  bottom: 5px;
+  content: "";
+  height: 1px;
+  width: 60%;
+  background-color: black;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.tag {
+  text-align: center;
+}
+.tag span {
+  font-family: 'Barriecito', 'cursive';
+  margin: 0px 10px;
+  background-color: #F45B69;
+  box-shadow: 2px 2px 5px gray;
+  padding: 5px 10px;
+  font-size: 20px;
 }
 
 @media (max-width: 900px) {
