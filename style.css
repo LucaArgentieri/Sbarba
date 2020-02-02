@@ -984,12 +984,16 @@ text-align: center;
 font-family: 'Barriecito', cursive;
 font-size: 35px;
 }
+.container_info_post {
+text-align: center;
+  
+}
 .abstract {
 margin-bottom: 1rem;
 }
 .tags_container {
 display: flex;
-justify-content: left;
+justify-content: center;
 align-content: center;
 margin-bottom: 1rem;
 }
