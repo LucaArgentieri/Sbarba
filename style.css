@@ -884,7 +884,6 @@ section.griglia-nav {
   justify-content: center;
   align-content: center;
 }
-
 .item_4_a {
   grid-column-start: 1;
   grid-column-end: 5;
@@ -1014,11 +1013,12 @@ img.cover {
   display: flex;
   align-content: center;
   justify-content: center;
+  margin-top: 2rem;
   margin-bottom: 1rem;
 }
-.read_more {
+.read_more a {
   background-color: #A0E884;
-  padding: 10px;
+  padding: 20px;
   border-radius: 50px;
 }
 
