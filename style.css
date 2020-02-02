@@ -530,9 +530,6 @@ width: 45%;
 h2.no-span:before {
 right: 1.5%;
 }
-h2.no-span:after {
-left: 1.5%;
-}
 @media (max-width:900px){
 #search-input.active {
   width: 500px;
