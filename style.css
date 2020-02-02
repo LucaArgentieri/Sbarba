@@ -519,8 +519,7 @@ white-space: nowrap;
 }
 h2.no-span:before,
 h2.no-span:after {
-border-top: 5px solid;
-animation: gradient 15s ease infinite;
+border-top: 3px solid;
 content: '';
 display: table-cell;
 position: relative;
@@ -533,7 +532,7 @@ right: 1.5%;
 @media (max-width:900px){
 #search-input.active {
   width: 500px;
-}
+  }
 }
 @media (max-width:630px){
 #search.active {
@@ -1355,9 +1354,18 @@ main.container-fluid {
 }
 /* Contenitore titolo single page */
 .containertitlesingle {
-display: flex;
-justify-content: center;
 padding-top: 50px;
+}
+@media (max-width:900px){
+  h2.no-span {
+    display: inline;
+  }
+  h2.no-span:after {
+    display: none;
+  }
+  h2.no-span:before {
+    display: none;
+  }
 }
 .containertitlesingle h2{
 text-align: center;
@@ -1394,8 +1402,98 @@ width: 20px;
 background: rgb(255, 140, 128);
 box-shadow:5px 5px 5px gray; 
 }
+/* articolo single */
 .singlearticle {
-height: 100vh;
+height: auto;
+margin-top: 50px;
+margin-left: 15px;
+margin-right: 15px;
+border: 15px #A0E884 solid;
+margin-bottom: 50px;
+}
+.article_title {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 20px;
+}
+.article_info {
+  text-align: center;
+}
+.article_img {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  object-fit: cover;
+}
+.article_img img {
+  height: auto;
+}
+.article_subtitle {
+  padding-top: 20px;
+  text-align: center;
+}
+.article_para {
+  text-align: left;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-bottom: 20px;
+}
+@media (max-width:900px){
+  .article_para {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+/* infobox autore */
+.article_author_container {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.article_author_card {
+  border: 5px solid #FF8C80;
+  width: 800px;
+  height: auto;
+  box-shadow:20px 20px 50px gray;
+}
+@media (max-width:900px){
+  .article_author_card {
+    width: 300px;
+  }
+}
+.author_name {
+  text-align: center;
+}
+.article_author_card_img {
+  background-image: url(images/coworking.jpg);
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.author_bio {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.author_button {
+  background-color: #A0E884;
+  padding: 10px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  font-size: 30px;
 }
 /* Pagina contacts ---------------------------------------------------------------- */
 .activecontacts > a {
