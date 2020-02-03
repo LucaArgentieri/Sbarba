@@ -1470,7 +1470,7 @@ margin-bottom: 50px;
 }
 @media (max-width:900px){
   .article_author_card {
-    width: 300px;
+    width: 360px;
   }
 }
 .author_name {
@@ -1493,10 +1493,11 @@ margin-bottom: 50px;
 }
 .author_button {
   background-color: #A0E884;
-  padding: 10px;
+  padding: 15px;
   border-radius: 50px;
   margin-bottom: 20px;
   font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* categorie ----------------------------------------------------------*/
