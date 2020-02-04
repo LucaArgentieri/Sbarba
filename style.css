@@ -233,9 +233,6 @@ margin-top: 75px;
 
 
 /* Grid homepage desktop */
-.container-fluid a {
-color: black;
-}
 section.container-fluid a:hover {
 color: black;
 opacity: 1;
@@ -1848,7 +1845,6 @@ background:#CC4949
 
 div.pagina_404 {
   display: flex;
-  width: 100vw;
   align-items: center;
   justify-content: center;
   margin: 0;
@@ -1856,15 +1852,29 @@ div.pagina_404 {
   font-family: "Barriecito", "cursive";
   letter-spacing: -7px;
 }
+.pagina_404 a {
+  color:white;
+}
+.container-fluid .pagina_404 a:hover{
+  color: white;
+}
+.testino a {
+  color: white;
+}
+.container-fluid .testino a:hover {
+  color: red;
+}
 .testino {
   font-size: 60px;
   font-family: "Barriecito", "cursive";
   text-align: center;
+  color: white;
 }
 main.flex {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: black;
 }
 @keyframes glitch{
   2%,64%{
@@ -1878,13 +1888,15 @@ main.flex {
   }
 }
 div.pagina_404:before {
-  content: attr(title);
+  content: '404';
   position: absolute;
   color: #84DCC6;
 }
-
+div.pagina_404:after:hover {
+  transform: scale(1.2);
+}
 div.pagina_404:after {
-  content: attr(title);
+  content: '404';
   position: absolute;
   color: #FF8C80;
 }
