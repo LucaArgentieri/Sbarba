@@ -37,6 +37,19 @@ let background_effect = document.getElementsByClassName("background")[0];
 let color_filter = document.getElementsByClassName("overlay")[0];
 
 on_mouse_over.addEventListener("mouseover", over);
+on_mouse_over.addEventListener("mouseover", (e) => {
+  console.log(e.target)
+  
+  on_mouse_over.style.transform = "translate(0px, -3px)";
+  on_mouse_over.style.boxShadow = "5px 5px 3px gray";
+  on_mouse_over.style.transition = "1s";
+  background_effect.classList.add("no-background-effects");
+  background_effect.style.transition = "1s";
+  color_filter.classList.add("no-background-color");
+  color_filter.style.transition = "1s";
+});
+
+
 
 function over() {
   on_mouse_over.style.transform = "translate(0px, -3px)";

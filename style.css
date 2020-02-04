@@ -991,24 +991,27 @@ margin-bottom: 1rem;
 display: flex;
 justify-content: center;
 align-content: center;
-margin-bottom: 1rem;
+margin: 1rem 0px;
+flex-wrap: wrap;
 }
+.tag {
+  margin: 5px;
+  padding: 5px;
+  box-shadow: 2px 2px 2px gray;
+  font-family: "Barriecito", "cursive";
+}
+
 .tag_1 {
 background-color: #FFD670;
-padding: 5px;
-border: 2px solid white;
 }
 .tag_2 {
 background-color: #FF8C80;
-padding: 5px;
-border: 2px solid white;
 
 }
 .tag_3 {
 background-color: #84DCC6;
-padding: 5px;
-border: 2px solid white;
 }
+
 .read_more_container {
 display: flex;
 align-content: center;
@@ -1496,6 +1499,45 @@ margin-bottom: 50px;
   font-size: 30px;
   font-family: 'Montserrat', sans-serif;
 }
+
+/* categorie ----------------------------------------------------------*/
+
+.flex {
+  display: flex;
+}
+.col_50 {
+  width: 48%;
+  height: auto;
+  margin: 0px auto;
+}
+.col_33 {
+  width: 33%;
+  padding: 0px 30px;
+}
+.col_50 .abstract{
+  padding: 0px 5px;
+  text-align: justify;
+}
+section.flex {
+  margin-bottom: 50px;
+  position: relative;
+}
+/*
+section.flex * {
+  border: 1px solid black;
+}
+section.flex:after {
+  border: 1px solid #FF8C80;
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 80%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+} */
 /* Pagina contacts ---------------------------------------------------------------- */
 .activecontacts > a {
 position: relative;
@@ -1710,7 +1752,12 @@ box-shadow: 10px 5px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 .barracolore {
 height: 50px;
 width: 100%;
-background-color: pink;
+background-color: #FF8C80;
+text-align: center;
+color: whitesmoke;
+font-size: 30px;
+font-family: "Barriecito", "cursive";
+margin-bottom: 50px;
 }
 /* form  https://codepen.io/ZachSaucier/pen/AIJpe*/
 .formfooter h2 {
