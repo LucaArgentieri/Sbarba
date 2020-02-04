@@ -481,7 +481,7 @@ align-items: center;
 justify-content: start;
 }
 #search-input {
-color: #52489C;
+color: black;
 border: 0;
 outline: 0;
 background: none;
@@ -752,7 +752,7 @@ z-index: 0;
 #search {
 height: 80px;
 width: 80px; /* sposta a destra searchbar */
-border: solid #52489C 5px;
+border: solid black 5px;
 border-radius: 50px;
 display: flex;
 justify-content: center;
@@ -767,7 +767,7 @@ align-items: center;
 justify-content: start;
 }
 #search-input {
-color: #52489C;
+color: black;
 border: 0;
 outline: 0;
 background: none;
@@ -1536,7 +1536,7 @@ font-size: 50px;
 .secondotitolocontatti {
 font-size: 50px;
 text-align: center;
-margin-bottom: 30px;
+margin-bottom: 50px;
 }
 .secondotitolocontatti p {
 font-size: 20px;
