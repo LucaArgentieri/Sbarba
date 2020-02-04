@@ -876,9 +876,19 @@ text-align: center;
 margin-bottom: 2rem;
 }
 .most_read_container {
-display: flex;
-justify-content: center;
-align-content: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.most_read_container li {
+    font-size: 16px;
+  line-height: 50px;
+  list-style-type: square;
+  list-style-position: inside;
+}
+.most_read_container li a:hover {
+  color: whitesmoke;
 }
 .item_4_a {
 grid-column-start: 1;
@@ -1021,7 +1031,7 @@ margin-bottom: 1rem;
 }
 .read_more a {
 background-color: #A0E884;
-padding: 20px;
+padding: 12px;
 border-radius: 50px;
 }
 
