@@ -895,7 +895,9 @@ grid-column-start: 1;
 grid-column-end: 5;
 grid-row-start: 9;
 grid-row-end: 13;
-border: 15px solid #FFD670;
+border: 15px white solid;
+background-color: #FFD670;
+border-radius: 100px;
 }
 .item_4_b {
 grid-column-start: 1;
@@ -917,7 +919,8 @@ grid-column-start: 16;
 grid-column-end: 20;
 grid-row-start: 9;
 grid-row-end: 23;
-border: 15px solid #84DCC6;
+border: 15px white solid;
+background-color: rgb(125, 130, 184);
 }
 .item_7 {
 grid-column-start: 20;
@@ -940,6 +943,11 @@ grid-column-end: 35;
 grid-row-start: 19;
 grid-row-end: 23;
 border: 15px solid #A0E884;
+background-color: #A0E884;
+border-radius: 100px;
+margin: 0px auto;
+width: 90%;
+height: 90%;
 }
 .item_9 {
 grid-column-start: 1;
@@ -1585,6 +1593,13 @@ text-align: center;
 padding-top: 150px;
 font-size: 50px;
 }
+.img_contatti {
+  margin:0px auto; 
+  height: 500px;
+  width: 700px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 .secondotitolocontatti {
 font-size: 50px;
 text-align: center;
@@ -1604,11 +1619,6 @@ display: flex;
 justify-content: center;
 align-items: center;
 width: 100%;
-}
-.maincontatti img {
-width: 500px;
-padding-top: 40px;
-padding-bottom: 40px;
 }
 .paracontatti{
 text-align: left;
@@ -1669,34 +1679,37 @@ display: flex;
 justify-content: center;
 }
 .image_card_1 {
-background-image: url(images/coworking.jpg);
+background-image: url(images/giuse.jpg);
 background-size: cover;
 height: 200px;
 width: 200px;
 border-radius: 100px;
 margin-bottom: 20px;
 margin-top: 10px;
+margin-top: 20px;
 }
 .image_card_2 {
-background-image: url(images/coworking.jpg);
+background-image: url(images/luca.jpg);
 background-size: cover;
 height: 200px;
 width: 200px;
 border-radius: 100px;
 margin-bottom: 20px;
-margin-top: 10px;
+margin-top: 20px;
 }
 .card_1 {
 border: 5px solid #FF8C80;
 width: 400px;
 height: 500px;
 box-shadow:20px 20px 50px gray; 
+margin-bottom: 50px;
 }
 .card_2 {
 border: 5px solid #A0E884;
 width: 400px;
 height: 500px;
 box-shadow:20px 20px 50px gray; 
+margin-bottom: 50px;
 }
 @media (max-width:900px){
 .card_1 {
@@ -1787,8 +1800,7 @@ padding-bottom: 40px;
 form.formfooter {
   max-width: auto;
   padding: 0px 20px 20px;
-}
-}
+} }
 .feedback-input {
 color:black;
 font-family: 'Montserrat', Arial, Helvetica, sans-serif;
@@ -1830,4 +1842,5 @@ margin-top:-4px;
 }
 [type="submit"]:hover { 
 background:#CC4949
+}
 }
