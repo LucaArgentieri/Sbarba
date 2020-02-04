@@ -122,5 +122,3 @@ function leave_b() {
   background_effect_b.classList.remove("no-background-effects");
   color_filter_b.classList.remove("no-background-color");
 }
-
-

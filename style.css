@@ -915,7 +915,6 @@ display: none;
   grid-row-start: 13;
   grid-row-end: 23;
   background-color:  #84DCC6;
-    margin-bottom: 30px;
 }
 .contenitore_lista_tags {
   display: flex;
@@ -939,15 +938,15 @@ border: 15px solid #FF8C80;
 padding: 10px;
 }
 .item_6 {
-grid-column-start: 16;
-grid-column-end: 20;
-grid-row-start: 9;
-grid-row-end: 23;
-border: 15px white solid;
-background: linear-gradient(45deg,#FFD670, #FF8C80, #7D82B8,
+  grid-column-start: 16;
+  grid-column-end: 20;
+  grid-row-start: 9;
+  grid-row-end: 23;
+  border: 15px white solid;
+  background: linear-gradient(45deg,#FFD670, #FF8C80, #7D82B8,
 #4062BB , #84DCC6, #A0E884);
   background-size: 200% 200%;
-  animation: gradient 30s ease infinite;
+  animation: gradient 15s ease-in-out infinite;
 }
 .item_7 {
 grid-column-start: 20;
@@ -981,7 +980,35 @@ grid-column-start: 1;
 grid-column-end: 10;
 grid-row-start: 23;
 grid-row-end: 31;
-border: 15px solid #FF8C80;
+border-right: 15px solid white;
+border-top: 15px solid white;
+border-bottom: 15px solid white;
+background-color: #FFD670;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.item_9 .email_index  {
+border: 2px solid black;
+border-radius: 100px;
+margin-bottom: 20px;
+padding-left: 20px;
+padding-right: 20px;
+width: 100%;
+height: 50px;
+background-color: #FFD670;
+}
+.item_9 .submit_index {
+  width: 40%;
+  border-radius: 100px;
+  background-color: #52489C;
+  opacity: 0.7;
+}
+.item_9 .submit_index:hover {
+  background-color: #52489C;
+  opacity: 1;
 }
 .item_10 {
 grid-column-start: 10;
@@ -1140,6 +1167,7 @@ margin-bottom: 0px;
 padding-left: 20px;
 padding-right: 20px;
 color: white;
+padding-bottom: 20px;
 }
 .sfondofooter hr {
 height: 5px;
