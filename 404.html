@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Barriecito&display=swap" rel="stylesheet">
@@ -14,13 +14,27 @@
     <title>Sbarbà - Errore 404</title>
 </head>
 <body>
+    <div class=":root"></div>
     <main class="flex">
         <section class="container-fluid">
             <div class="pagina_404"><a href="index.html">404</a></div>
-            <div class="testino" title="Ops, la pagina che cercavi non esiste...">Ops, la pagina che cercavi non esiste! 
+            <div class="testino" title="Ops, la pagina che cercavi non esiste...">Ops, la pagina che cercavi non esiste!
                 <br> Cliccami e torna alla <a href="index.html">home.</a></div>
-                
+
+                </div>
         </section>
     </main>
+<script type="text/javascript">
+function update(e){
+var x = e.clientX || e.touches[0].clientX
+var y = e.clientY || e.touches[0].clientY
+
+document.documentElement.style.setProperty('--cursorX', x + 'px')
+document.documentElement.style.setProperty('--cursorY', y + 'px')
+}
+
+document.addEventListener('mousemove',update)
+document.addEventListener('touchmove',update)
+</script>
 </body>
 </html>
