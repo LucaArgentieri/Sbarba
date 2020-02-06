@@ -1471,16 +1471,27 @@ main.container-fluid {
 /* Contenitore titolo single page */
 .containertitlesingle {
 padding-top: 50px;
+text-align: center;
 }
 @media (max-width:900px){
   h2.no-span {
     display: inline;
+    margin-bottom: 40px;
   }
   h2.no-span:after {
     display: none;
   }
   h2.no-span:before {
     display: none;
+  }
+  .containertitlesingle h2 {
+    font-size: 25px;
+  }
+  .containerbox_single {
+    margin-top: 50px;
+  }
+  .containerbox_categories {
+    margin-top: 50px;
   }
 }
 .containertitlesingle h2{
@@ -1492,6 +1503,18 @@ display: flex;
 justify-content: center;
 align-items: center;
 margin-bottom: 35px;
+}
+.containerbox_single {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  width: 200px;
+}
+.containerbox_categories {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  width: 200px;
 }
 .containerbox {
 display: flex;
