@@ -1122,6 +1122,20 @@ border-radius: 50px;
 
 
 /* Media Query Main & Articles */
+@media (height:568px){
+  .grid_articles {
+    display: block;
+  }
+  .item_2 {
+    margin-bottom: 30px;
+  }
+  .item_5 {
+    margin-bottom: 30px;
+  }
+  .item_7 {
+    margin-bottom: 30px;
+  }
+}
 @media (max-width: 900px) {
 .grid_articles {
   grid-template-rows: repeat(56, auto);
