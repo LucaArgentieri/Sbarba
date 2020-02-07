@@ -75,6 +75,7 @@ opacity: 0.7;
 h2.navbar-brand.logotxt {
   font-size: 40px;
   color: black;
+  margin-top: 20px;
 }
 .navbar-header p {
   padding-left: 2px;
@@ -546,7 +547,7 @@ text-decoration: none;
       align-items: center;
       font-size: 40px;
       font-family: 'Barriecito', cursive;
-      z-index: 1;
+      z-index: 0;
 }
 .item-d a {
   transform: rotate(45deg);
@@ -563,6 +564,7 @@ text-decoration: none;
       align-items: center;
       font-size: 40px;
       font-family: 'Barriecito', cursive;
+      z-index: -1;
 }
 .item-f {
   grid-column-start: 12;
@@ -681,6 +683,11 @@ text-align: left;
 .titolobarraricerca {
 font-size: 50px;
 margin-bottom: 5px;
+}
+@media (max-width:321px){
+  .titolobarraricerca {
+    font-size: 40px;
+  }
 }
 .parbarraricerca {
 font-size: 20px;
