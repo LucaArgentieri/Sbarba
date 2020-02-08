@@ -889,10 +889,8 @@ grid-column-start: 1;
 grid-column-end: 10;
 grid-row-start: 23;
 grid-row-end: 31;
-border-right: 15px solid white;
-border-top: 15px solid white;
-border-bottom: 15px solid white;
-background-color: #FFD670;
+border: 15px solid #FFD670;
+background-color: white;
 text-align: center;
 display: flex;
 justify-content: center;
@@ -907,7 +905,7 @@ padding-left: 20px;
 padding-right: 20px;
 width: 100%;
 height: 50px;
-background-color: #FFD670;
+background-color: white;
 }
 .item_9 .submit_index {
   width: 40%;
@@ -1467,7 +1465,6 @@ height: auto;
 margin-top: 50px;
 margin-left: 15px;
 margin-right: 15px;
-border: 15px #A0E884 solid;
 margin-bottom: 50px;
 }
 .article_title {
@@ -1548,14 +1545,16 @@ margin-bottom: 50px;
   margin-top: 20px;
 }
 .author_button {
-  background-color: #A0E884;
+  background-color: #FF8C80;
   padding: 15px;
   border-radius: 50px;
   margin-bottom: 20px;
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'Montserrat', sans-serif;
 }
-
+.author_button:hover {
+  box-shadow: 5px 5px 5px grey;
+}
 /* categorie ----------------------------------------------------------*/
 
 .flex {
