@@ -1572,10 +1572,10 @@ margin-bottom: 50px;
 }
 .col_33 {
   width: 33%;
-  padding: 0px 30px;
+  padding: 0px 10px;
 }
 .col_50 .abstract{
-  padding: 0px 25px;
+  padding: 0px 15px;
   text-align: justify;
   margin-bottom: 40px;
 }
@@ -1588,7 +1588,7 @@ section.flex {
     width: 100%;
     margin-bottom: 50px;
     border: 15px solid #84DCC6;
-    padding: 10px 20px;
+    padding: 10px 10px;
   
   }
   section.flex {
