@@ -1588,6 +1588,8 @@ margin-bottom: 50px;
 }
 .col_50 figure {
   margin-bottom: 40px;
+  overflow: hidden;
+  height: 300px;
 }
 .col_33 {
   width: 33%;
@@ -1598,6 +1600,7 @@ margin-bottom: 50px;
   height: 220px;
   margin: 0px auto;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 .col_50 .abstract{
   padding: 0px 15px;
