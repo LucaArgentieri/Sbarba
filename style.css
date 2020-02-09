@@ -1617,7 +1617,9 @@ section.flex {
     margin-bottom: 50px;
     border: 15px solid #84DCC6;
     padding: 10px 10px;
-  
+  }
+  .col_50 figure {
+    height: 200px;
   }
   section.flex {
     flex-direction: column;
