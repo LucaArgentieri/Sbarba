@@ -566,6 +566,7 @@ text-decoration: none;
       font-size: 40px;
       font-family: 'Barriecito', cursive;
       z-index: 1;
+      text-align: center;
 }
 
 .item-e_resp {
@@ -631,7 +632,7 @@ text-decoration: none;
   }
 }
 @media (width:768px){
-  .item-d {
+  .item-d_resp {
     grid-column-start: 12;
     grid-column-end: 24;
     grid-row-start: 4;
