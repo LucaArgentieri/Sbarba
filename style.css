@@ -1498,14 +1498,15 @@ margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-content: center;
-  object-fit: cover;
+  height: 550px; 
 }
 .article_img img {
-  height: auto;
+  height: 100%;
 }
 .article_subtitle {
   padding-top: 20px;
   text-align: center;
+  margin-bottom: 25px;
 }
 .article_para {
   text-align: left;
@@ -1521,7 +1522,7 @@ margin-bottom: 50px;
 }
 /* infobox autore */
 .article_author_container {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   margin-top: 50px;
   display: flex;
   justify-content: space-evenly;
@@ -1540,16 +1541,24 @@ margin-bottom: 50px;
   height: auto;
   box-shadow:20px 20px 50px gray;
 }
+.flex_author {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+}
 @media (max-width:900px){
   .article_author_card {
-    width: 360px;
+    width: 500px;
   }
 }
 .author_name {
   text-align: center;
+  margin-bottom: 60px;
+  font-size: 40px;
 }
 .article_author_card_img {
-  background-image: url(images/coworking.jpg);
+  background-image: url(images/luca.jpg);
   background-size: cover;
   height: 200px;
   width: 200px;
@@ -1573,6 +1582,17 @@ margin-bottom: 50px;
 }
 .author_button:hover {
   box-shadow: 5px 5px 5px grey;
+}
+@media (max-width:900px){
+  .article_author_container {
+    margin-bottom: 50px;
+  }
+  .article_author_card_img {
+    display: none;
+  }
+  .author_name {
+    margin: 20px 0px;
+  }
 }
 /* categorie ----------------------------------------------------------*/
 
