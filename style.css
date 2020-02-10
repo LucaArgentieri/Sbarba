@@ -207,20 +207,20 @@ margin-top: 75px;
 /* menu hamburger */
 @media (max-width:900px){
 .menu-bg {
-  z-index: 1;
+  z-index: 3;
   visibility: visible;
   transition: .3s;
 }
 .menu-bg.fs {
-  z-index: 1;
+  z-index: 3;
 }
 .menu-burger {
-  z-index: 1;
+  z-index: 3;
   visibility: visible;
   transition: .3s;
 }
 .menu-burger.fs {
-  z-index: 2;
+  z-index: 3;
 }
 .menu-items{
   z-index: 2;
