@@ -37,24 +37,9 @@ let background_effect = document.getElementsByClassName("background")[0];
 let color_filter = document.getElementsByClassName("overlay")[0];
 
 on_mouse_over.addEventListener("mouseover", over);
-on_mouse_over.addEventListener("mouseover", (e) => {
-  console.log(e.target)
-
-  on_mouse_over.style.transform = "translate(0px, -3px)";
-  on_mouse_over.style.boxShadow = "5px 5px 3px gray";
-  on_mouse_over.style.transition = "1s";
-  background_effect.classList.add("no-background-effects");
-  background_effect.style.transition = "1s";
-  color_filter.classList.add("no-background-color");
-  color_filter.style.transition = "1s";
-});
-
-
 
 function over() {
-  on_mouse_over.style.transform = "translate(0px, -3px)";
-  on_mouse_over.style.boxShadow = "5px 5px 3px gray";
-  on_mouse_over.style.transition = "1s";
+  on_mouse_over.classList.add("transform_shadow");
   background_effect.classList.add("no-background-effects");
   background_effect.style.transition = "1s";
   color_filter.classList.add("no-background-color");
@@ -64,8 +49,7 @@ function over() {
 on_mouse_over.addEventListener("mouseleave", leave);
 
 function leave() {
-  on_mouse_over.style.transform = "translate(0px, 0px)";
-  on_mouse_over.style.boxShadow = "none";
+  on_mouse_over.classList.remove("transform_shadow");
   background_effect.classList.remove("no-background-effects");
   color_filter.classList.remove("no-background-color");
 }
@@ -78,9 +62,7 @@ let color_filter_a = document.getElementsByClassName("overlay")[1];
 on_mouse_over_a.addEventListener("mouseover", over_a);
 
 function over_a() {
-  on_mouse_over_a.style.transform = "translate(0px, -3px)";
-  on_mouse_over_a.style.boxShadow = "5px 5px 3px gray";
-  on_mouse_over_a.style.transition = "1s";
+  on_mouse_over_a.classList.add("transform_shadow");
   background_effect_a.classList.add("no-background-effects");
   background_effect_a.style.transition = "1s";
   color_filter_a.classList.add("no-background-color");
@@ -90,8 +72,7 @@ function over_a() {
 on_mouse_over_a.addEventListener("mouseleave", leave_a);
 
 function leave_a() {
-  on_mouse_over_a.style.transform = "translate(0px, 0px)";
-  on_mouse_over_a.style.boxShadow = "none";
+  on_mouse_over_a.classList.remove("transform_shadow");
   background_effect_a.classList.remove("no-background-effects");
   color_filter_a.classList.remove("no-background-color");
 }
@@ -105,9 +86,7 @@ let color_filter_b = document.getElementsByClassName("overlay")[2];
 on_mouse_over_b.addEventListener("mouseover", over_b);
 
 function over_b() {
-  on_mouse_over_b.style.transform = "translate(0px, -3px)";
-  on_mouse_over_b.style.boxShadow = "5px 5px 3px gray";
-  on_mouse_over_b.style.transition = "1s";
+  on_mouse_over_b.classList.add("transform_shadow");
   background_effect_b.classList.add("no-background-effects");
   background_effect_b.style.transition = "1s";
   color_filter_b.classList.add("no-background-color");
@@ -117,8 +96,37 @@ function over_b() {
 on_mouse_over_b.addEventListener("mouseleave", leave_b);
 
 function leave_b() {
-  on_mouse_over_b.style.transform = "translate(0px, 0px)";
-  on_mouse_over_b.style.boxShadow = "none";
+  on_mouse_over_b.classList.remove("transform_shadow");
   background_effect_b.classList.remove("no-background-effects");
   color_filter_b.classList.remove("no-background-color");
+}
+
+// mouseover/mouseleave effects on nav-grid leggere e alloggiare
+
+let mouse_over = document.getElementsByClassName("over_effect_no_img")[0];
+let mouse_over_alloggiare = document.getElementsByClassName("over_effect_no_img")[1];
+
+mouse_over.addEventListener("mouseover", over_1);
+
+function over_1() {
+
+  mouse_over.style.transform = "translate(0px, -3px)";
+  mouse_over.style.opacity = "0.8";
+  mouse_over.style.boxShadow = "5px 5px 3px gray";
+  mouse_over.style.transition = "1s";
+  mouse_over_alloggiare.style.transform = "translate(0px, -3px)";
+  mouse_over_alloggiare.style.opacity = "0.8";
+  mouse_over_alloggiare.style.boxShadow = "5px 5px 3px gray";
+  mouse_over_alloggiare.style.transition = "1s";
+};
+
+mouse_over.addEventListener("mouseleave", leave_1);
+
+function leave_1() {
+  mouse_over.style.transform = "translate(0px, 0px)";
+  mouse_over.style.opacity = "1";
+  mouse_over.style.boxShadow = "none";
+  mouse_over_alloggiare.style.transform = "translate(0px, 0px)";
+  mouse_over_alloggiare.style.opacity = "1";
+  mouse_over_alloggiare.style.boxShadow = "none";
 }
