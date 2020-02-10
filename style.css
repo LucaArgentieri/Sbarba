@@ -967,6 +967,9 @@ height: 100%;
 width: 100%;
 object-fit: cover;
 }
+.image img:hover, .col_2 img:hover {
+  opacity: 0.7;
+}
 .categoria {
 text-align: center;
 }
@@ -978,6 +981,9 @@ font-size: 35px;
 .container_info_post {
 text-align: center;
 
+}
+.autore:hover {
+  text-decoration: underline !important;
 }
 .abstract {
 margin-bottom: 1rem;
