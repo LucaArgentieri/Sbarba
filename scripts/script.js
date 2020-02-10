@@ -97,36 +97,57 @@ on_mouse_over_b.addEventListener("mouseleave", leave_b);
 
 function leave_b() {
   on_mouse_over_b.classList.remove("transform_shadow");
+  on_mouse_over_b.style.transition = "1s";
   background_effect_b.classList.remove("no-background-effects");
   color_filter_b.classList.remove("no-background-color");
 }
 
 // mouseover/mouseleave effects on nav-grid leggere e alloggiare
 
+// alloggiare
+
 let mouse_over = document.getElementsByClassName("over_effect_no_img")[0];
 let mouse_over_alloggiare = document.getElementsByClassName("over_effect_no_img")[1];
 
-mouse_over.addEventListener("mouseover", over_1);
+mouse_over_alloggiare.addEventListener("mouseover", over_1);
 
 function over_1() {
 
-  mouse_over.style.transform = "translate(0px, -3px)";
-  mouse_over.style.opacity = "0.8";
-  mouse_over.style.boxShadow = "5px 5px 3px gray";
-  mouse_over.style.transition = "1s";
-  mouse_over_alloggiare.style.transform = "translate(0px, -3px)";
-  mouse_over_alloggiare.style.opacity = "0.8";
-  mouse_over_alloggiare.style.boxShadow = "5px 5px 3px gray";
-  mouse_over_alloggiare.style.transition = "1s";
+  mouse_over.classList.add("transform_allog");
+  mouse_over_alloggiare.classList.add("transform_allog");
 };
 
-mouse_over.addEventListener("mouseleave", leave_1);
+mouse_over_alloggiare.addEventListener("mouseleave", leave_1);
+
 
 function leave_1() {
-  mouse_over.style.transform = "translate(0px, 0px)";
-  mouse_over.style.opacity = "1";
-  mouse_over.style.boxShadow = "none";
-  mouse_over_alloggiare.style.transform = "translate(0px, 0px)";
-  mouse_over_alloggiare.style.opacity = "1";
-  mouse_over_alloggiare.style.boxShadow = "none";
+  mouse_over.classList.remove("transform_allog");
+  mouse_over_alloggiare.classList.remove("transform_allog");
+  mouse_over_alloggiare.style.transition = "1s";
+  mouse_over.style.transition = "1s";
+  
 }
+
+// leggere
+
+let mouse_over_1 = document.getElementsByClassName("over_effect_no_img")[3];
+let mouse_over_leggere = document.getElementsByClassName("over_effect_no_img")[2];
+
+mouse_over_leggere.addEventListener("mouseover", over_2);
+
+function over_2() {
+
+  mouse_over_1.classList.add("transform_legg");
+  mouse_over_leggere.classList.add("transform_legg");
+};
+
+mouse_over_leggere.addEventListener("mouseleave", leave_2);
+
+
+function leave_2() {
+  mouse_over_1.classList.remove("transform_legg");
+  mouse_over_leggere.classList.remove("transform_legg");
+  mouse_over_leggere.style.transition = "1s";
+  mouse_over_1.style.transition = "1s";
+
+};
