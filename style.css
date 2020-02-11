@@ -525,7 +525,7 @@ text-decoration: none;
     justify-content: center;
     align-items: center;
     font-size: 35px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     font-family: 'Barriecito', cursive;
     box-shadow: 5px 5px 5px grey;
   }
@@ -1358,7 +1358,7 @@ main.container-fluid {
     justify-content: center;
     align-items: center;
     font-size: 35px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     font-family: 'Barriecito', cursive;
     box-shadow: 5px 5px 5px grey;
 }
