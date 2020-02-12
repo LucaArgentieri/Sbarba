@@ -58,6 +58,7 @@ h2.navbar-brand.logotxt{
 font-size: 70px;
 color: black;
 padding-bottom: 20px;
+margin-top: 10px;
 }
 .navbar-header p {
 font-size: 20px;
@@ -1853,14 +1854,12 @@ margin-top: 20px;
 border: 5px solid #FF8C80;
 width: 400px;
 height: 500px;
-box-shadow:20px 20px 50px gray;
 margin-bottom: 50px;
 }
 .card_2 {
 border: 5px solid #A0E884;
 width: 400px;
 height: 500px;
-box-shadow:20px 20px 50px gray;
 margin-bottom: 50px;
 }
 @media (max-width:900px){
