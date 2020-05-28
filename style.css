@@ -852,7 +852,7 @@ margin-bottom: 2rem;
   flex-direction: column;
 }
 .most_read_container li {
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 30px;
 }
 .most_read_container li a:hover {
