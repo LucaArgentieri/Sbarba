@@ -887,6 +887,9 @@ display: none;
   grid-row-end: 23;
   /* background-color:  #84DCC6; */
   /* border: 10px solid #84DCC6; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .contenitore_lista_tags {
   display: flex;
