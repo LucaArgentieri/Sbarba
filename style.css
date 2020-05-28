@@ -835,28 +835,28 @@ grid-column-end: 35;
 grid-row-start: 1;
 grid-row-end: 9;
 border: 10px solid white;
-background-color: #FF8C80;
+/* background-color: #FF8C80; */
 }
 .item_3 h2 {
 margin-top: 1rem;
 text-align: center;
 margin-bottom: 2rem;
 }
+
 .most_read_container {
   display:flex;
-  justify-content: center;
   align-items: center;
   margin-top: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  flex-direction: column;
 }
 .most_read_container li {
-    font-size: 16px;
-  line-height: 50px;
-
-  margin-right: 0px;
-  margin-left: 0px;
+  font-size: 16px;
+  margin-bottom: 30px;
 }
 .most_read_container li a:hover {
-  color: whitesmoke;
+  color: #FF8C80;
 }
 .item_4_a {
 grid-column-start: 1;
@@ -882,10 +882,11 @@ display: none;
 }
 .item_4_b {
   grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 6;
   grid-row-start: 9;
   grid-row-end: 23;
-  background-color:  #84DCC6;
+  /* background-color:  #84DCC6; */
+  /* border: 10px solid #84DCC6; */
 }
 .contenitore_lista_tags {
   display: flex;
@@ -898,10 +899,15 @@ display: none;
   font-size: 20px;
 }
 .contenitore_lista_tags ul li a:hover {
-  color: white;
+  color: #84DCC6;
+}
+@media(max-width:1100px){
+  .contenitore_lista_tags ul li a{
+    font-size: 15px;
+  }
 }
 .item_5 {
-grid-column-start: 5;
+grid-column-start: 6;
 grid-column-end: 16;
 grid-row-start: 9;
 grid-row-end: 23  ;
@@ -909,11 +915,14 @@ border: 15px solid #FF8C80;
 padding: 10px;
 }
 .item_6 {
-  grid-column-start: 16;
-  grid-column-end: 20;
+  grid-column-start: 18;
+  grid-column-end: 23;
   grid-row-start: 9;
   grid-row-end: 23;
-  background-color: #7D82B8;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
 .item_6 h3 {
   margin-top: 10px;
@@ -927,14 +936,14 @@ padding: 10px;
   font-size: 20px;
 }
 .item_6 ul li a:hover {
-  color: white;
+  color: rgb(125, 130, 184);
 }
 .item_6 img {
   position:relative;
 }
 .item_7 {
-grid-column-start: 20;
-grid-column-end: 31;
+grid-column-start: 25;
+grid-column-end: 35;
 grid-row-start: 9;
 grid-row-end: 23;
 border: 15px solid #FFD670;
@@ -964,7 +973,7 @@ grid-column-start: 1;
 grid-column-end: 10;
 grid-row-start: 23;
 grid-row-end: 31;
-border: 15px solid #FFD670;
+border: 15px solid #7D82B8;
 background-color: white;
 text-align: center;
 display: flex;
